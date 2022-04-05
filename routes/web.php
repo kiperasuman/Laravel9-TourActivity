@@ -43,8 +43,8 @@ Route::get('/save',[HomeController::class,'save'])->name('save');
 /*
 Route::get('/', function () {
     return view('welcome');
-});
-*/
+});*/
+
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
