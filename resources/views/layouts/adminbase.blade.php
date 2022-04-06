@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="{{asset('assets')}}/admin/vendors/select2-bootstrap-theme/select2-bootstrap.min.css">
     <!-- End plugin css for this page -->
     <!-- inject:css -->
-    <link rel="stylesheet" href=="{{asset('assets')}}/admin/css/vertical-layout-light/style.css">
+    <link rel="stylesheet" href="{{asset('assets')}}/admin/css/vertical-layout-light/style.css">
     <!-- endinject -->
     <link rel="shortcut icon" href="{{asset('assets')}}/admin/images/favicon.png" />
     @yield("head")
