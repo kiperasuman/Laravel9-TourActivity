@@ -13,21 +13,21 @@
 </div>
 <!-- container-scroller -->
 <!-- plugins:js -->
-<script src="{{asset('assets')}}/admin/vendors/js/vendor.bundle.base.js"></script>
+<script src="{{asset('assetss')}}/admin/vendors/js/vendor.bundle.base.js"></script>
 <!-- endinject -->
 <!-- Plugin js for this page -->
-<script src="{{asset('assets')}}/admin/vendors/typeahead.js/typeahead.bundle.min.js"></script>
-<script src="{{asset('assets')}}/admin/vendors/select2/select2.min.js"></script>
+<script src="{{asset('assetss')}}/admin/vendors/typeahead.js/typeahead.bundle.min.js"></script>
+<script src="{{asset('assetss')}}/admin/vendors/select2/select2.min.js"></script>
 <!-- End plugin js for this page -->
 <!-- inject:js -->
-<script src="{{asset('assets')}}/admin/js/off-canvas.js"></script>
-<script src="{{asset('assets')}}/admin/js/hoverable-collapse.js"></script>
-<script src="{{asset('assets')}}/admin/js/template.js"></script>
-<script src="{{asset('assets')}}/admin/js/settings.js"></script>
-<script src="{{asset('assets')}}/admin/js/todolist.js"></script>
+<script src="{{asset('assetss')}}/admin/js/off-canvas.js"></script>
+<script src="{{asset('assetss')}}/admin/js/hoverable-collapse.js"></script>
+<script src="{{asset('assetss')}}/admin/js/template.js"></script>
+<script src="{{asset('assetss')}}/admin/js/settings.js"></script>
+<script src="{{asset('assetss')}}/admin/js/todolist.js"></script>
 <!-- endinject -->
 <!-- Custom js for this page-->
-<script src="{{asset('assets')}}/admin/js/file-upload.js"></script>
-<script src="{{asset('assets')}}/admin/js/typeahead.js"></script>
-<script src="{{asset('assets')}}/admin/js/select2.js"></script>
+<script src="{{asset('assetss')}}/admin/js/file-upload.js"></script>
+<script src="{{asset('assetss')}}/admin/js/typeahead.js"></script>
+<script src="{{asset('assetss')}}/admin/js/select2.js"></script>
 <!-- End custom js for this page-->

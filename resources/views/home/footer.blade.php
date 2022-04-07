@@ -23,3 +23,5 @@
         $('#bookingForm input, #bookingForm textarea').placeholder();
     });
 </script>
+</body>
+</html>

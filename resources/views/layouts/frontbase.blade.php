@@ -6,24 +6,24 @@
     <meta name="format-detection" content="telephone=no" />
     <link rel="icon" href="images/favicon.ico">
     <link rel="shortcut icon" href="images/favicon.ico" />
-    <link rel="stylesheet" href="{{asset('assets')}}/booking/css/booking.css">
-    <link rel="stylesheet" href="{{asset('assets')}}/css/camera.css">
-    <link rel="stylesheet" href="{{asset('assets')}}/css/owl.carousel.css">
-    <link rel="stylesheet" href="{{asset('assets')}}/css/style.css">
-    <script src="{{asset('assets')}}/js/jquery.js"></script>
-    <script src="{{asset('assets')}}/js/jquery-migrate-1.2.1.js"></script>
-    <script src="{{asset('assets')}}/js/script.js"></script>
-    <script src="{{asset('assets')}}/js/superfish.js"></script>
-    <script src="{{asset('assets')}}/js/jquery.ui.totop.js"></script>
-    <script src="{{asset('assets')}}/js/jquery.equalheights.js"></script>
-    <script src="{{asset('assets')}}/js/jquery.mobilemenu.js"></script>
-    <script src="{{asset('assets')}}/js/jquery.easing.1.3.js"></script>
-    <script src="{{asset('assets')}}/js/owl.carousel.js"></script>
-    <script src="{{asset('assets')}}/js/camera.js"></script>
+    <link rel="stylesheet" href="{{asset('assetss')}}/booking/css/booking.css">
+    <link rel="stylesheet" href="{{asset('assetss')}}/css/camera.css">
+    <link rel="stylesheet" href="{{asset('assetss')}}/css/owl.carousel.css">
+    <link rel="stylesheet" href="{{asset('assetss')}}/css/style.css">
+    <script src="{{asset('assetss')}}/js/jquery.js"></script>
+    <script src="{{asset('assetss')}}/js/jquery-migrate-1.2.1.js"></script>
+    <script src="{{asset('assetss')}}/js/script.js"></script>
+    <script src="{{asset('assetss')}}/js/superfish.js"></script>
+    <script src="{{asset('assetss')}}/js/jquery.ui.totop.js"></script>
+    <script src="{{asset('assetss')}}/js/jquery.equalheights.js"></script>
+    <script src="{{asset('assetss')}}/js/jquery.mobilemenu.js"></script>
+    <script src="{{asset('assetss')}}/js/jquery.easing.1.3.js"></script>
+    <script src="{{asset('assetss')}}/js/owl.carousel.js"></script>
+    <script src="{{asset('assetss')}}/js/camera.js"></script>
     <!--[if (gt IE 9)|!(IE)]><!-->
-    <script src="{{asset('assets')}}/js/jquery.mobile.customized.min.js"></script>
+    <script src="{{asset('assetss')}}/js/jquery.mobile.customized.min.js"></script>
     <!--<![endif]-->
-    <script src="{{asset('assets')}}/booking/js/booking.js"></script>
+    <script src="{{asset('assetss')}}/booking/js/booking.js"></script>
     <script>
         $(document).ready(function(){
             jQuery('#camera_wrap').camera({
@@ -58,8 +58,8 @@
     </div>
     <![endif]-->
     <!--[if lt IE 9]>
-    <script src="{{asset('assets')}}/js/html5shiv.js"></script>
-    <link rel="stylesheet" media="screen" href="{{asset('assets')}}/css/ie.css">
+    <script src="{{asset('assetss')}}/js/html5shiv.js"></script>
+    <link rel="stylesheet" media="screen" href="{{asset('assetss')}}/css/ie.css">
     <![endif]-->
 
     @yield("head")
@@ -67,12 +67,12 @@
 <body class="page1" id="top">
 
 @include("home.header")
-
+@section('slider')
+@show
 @section('sidebar')
     @include("home.sidebar")
 @show
-@section('slider')
-@show
+
 @yield('content')
 
 @include("home.footer")

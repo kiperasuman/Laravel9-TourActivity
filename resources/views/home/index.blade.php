@@ -1,8 +1,9 @@
 @extends('layouts.frontbase')
 
 @section('title','Tour Activity')
+
 @section('slider')
-@include('home.slider')
+    @include('home.slider')
 @show
 @section('content')
     <!--==============================Content=================================-->
@@ -10,7 +11,7 @@
         <div class="container_12">
             <div class="grid_4">
                 <div class="banner">
-                    <img src="{{asset('assets')}}/images/ban_img1.jpg" alt="">
+                    <img src="{{asset('assetss')}}/images/ban_img1.jpg" alt="">
                     <div class="label">
                         <div class="title">Barcelona</div>
                         <div class="price">FROM<span>$ 1000</span></div>
@@ -20,7 +21,7 @@
             </div>
             <div class="grid_4">
                 <div class="banner">
-                    <img src="{{asset('assets')}}/images/ban_img2.jpg" alt="">
+                    <img src="{{asset('assetss')}}/images/ban_img2.jpg" alt="">
                     <div class="label">
                         <div class="title">GOA</div>
                         <div class="price">FROM<span>$ 1.500</span></div>
@@ -30,7 +31,7 @@
             </div>
             <div class="grid_4">
                 <div class="banner">
-                    <img src="{{asset('assets')}}/images/ban_img3.jpg" alt="">
+                    <img src="{{asset('assetss')}}/images/ban_img3.jpg" alt="">
                     <div class="label">
                         <div class="title">PARIS</div>
                         <div class="price">FROM<span>$ 1.600</span></div>
@@ -114,7 +115,7 @@
             </div>
             <div class="grid_5 prefix_1">
                 <h3>Welcome</h3>
-                <img src="{{asset('assets')}}/images/page1_img1.jpg" alt="" class="img_inner fleft">
+                <img src="{{asset('assetss')}}/images/page1_img1.jpg" alt="" class="img_inner fleft">
                 <div class="extra_wrapper">
                     <p>Lorem ipsum dolor sit ere amet, consectetur ipiscin.</p>
                     In mollis erat mattis neque facilisis, sit ametiol
@@ -125,7 +126,7 @@
                 Proin pharetra luctus diam, a scelerisque eros convallis
                 <h4>Clients’ Quotes</h4>
                 <blockquote class="bq1">
-                    <img src="{{asset('assets')}}/images/page1_img2.jpg" alt="" class="img_inner noresize fleft">
+                    <img src="{{asset('assetss')}}/images/page1_img2.jpg" alt="" class="img_inner noresize fleft">
                     <div class="extra_wrapper">
                         <p>Duis massa elit, auctor non pellentesque vel, aliquet sit amet erat. Nullam eget dignissim nisi, aliquam feugiat nibh. </p>
                         <div class="alright">
