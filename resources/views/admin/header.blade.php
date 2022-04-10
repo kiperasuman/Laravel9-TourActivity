@@ -268,5 +268,3 @@
                 <!-- chat tab ends -->
             </div>
         </div>
-    </div>
-</div>
