@@ -46,7 +46,7 @@
         </li>
         <li class="nav-item">
             <a class="nav-link" href="/admin/faq">
-                <i class="icon-search menu-icon"></i>
+                <i class=" icon-search menu-icon "></i>
                 <span class="menu-title">FAQ</span>
             </a>
         </li>
