@@ -1,6 +1,6 @@
 @extends('layouts.adminbase')
 
-@section('title','Edit Category')
+@section('title','Show Category')
 
 @section('content')
     <!-- partial -->
