@@ -10,7 +10,7 @@
                 <h4 class="card-title" > Edit Category:{{$data->title}}</h4>
                 <p class="card-description"><u> Category Elements </u> </p>
 
-                <form class="forms" action="/admin/category/update/{{$data->id}}" method="post">
+                <form class="forms" action="{{route('admin.category.update',['id'=>$data->id])}}" method="post">
                     @csrf
                     <div class="form-group">
                         <label for="exampleInputName1">Title</label>

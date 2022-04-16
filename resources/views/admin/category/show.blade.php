@@ -50,8 +50,8 @@
                         </div>
                     </div>
                 </div>
-                <a href="/admin/category/edit/{{$data->id}}"class="btn btn-outline-success btn-fw"> Edit</a>
-                <a href="/admin/category/destroy/{{$data->id}}"class="btn btn-outline-reddit btn-fw" onclick="return confirm('Deleting!Are you sure?')"> Delete </a>
+                <a href="{{route('admin.category.edit',['id'=>$data->id])}}"class="btn btn-outline-success btn-fw"> Edit</a>
+                <a href="{{route('admin.category.destroy',['id'=>$data->id])}}"class="btn btn-outline-reddit btn-fw" onclick="return confirm('Deleting!Are you sure?')"> Delete </a>
             </div>
         </div>
     </div>
