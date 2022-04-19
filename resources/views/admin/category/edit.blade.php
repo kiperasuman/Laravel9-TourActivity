@@ -10,7 +10,7 @@
                 <h4 class="card-title" > Edit Category:{{$data->title}}</h4>
                 <p class="card-description"><u> Category Elements </u> </p>
 
-                <form class="forms" action="{{route('admin.category.update',['id'=>$data->id])}}" method="post">
+                <form class="forms" action="{{route('admin.category.update',['id'=>$data->id])}}" method="post" enctype="multipart/form-data">
                     @csrf
                     <div class="form-group">
                         <label for="exampleInputName1">Title</label>
@@ -28,18 +28,16 @@
                     </div>
 
                     <div class="form-group">
-                        <label>Image upload</label>
-                        <input type="file" name="image" class="file-upload-default" value="{{$data->image}}">
+                        <label for="exampleInputFile">Image upload</label>
                         <div class="input-group col-xs-12">
-                            <input type="text" class="form-control file-upload-info" disabled="" placeholder="Upload Image">
-                            <span class="input-group-append">
-                            <button class="file-upload-browse btn btn-primary" type="button">Upload</button>
-                        </span>
-                        </div>
+                            <div class="custom-file">
+                                <label class="form-control custom-file-label" for="exampleInputFile" > Upload Image</label>
+                                <input type="file" name="image" class="custom-file-input" value="{{$data->image}}">
+                            </div>
+                            </div>
                     </div>
 
                     <div class="form-group">
-
                           <label>Status</label>
                             <select class="form-control" name="status">
                                 <option selected>{{$data->status}}</option>
