@@ -21,6 +21,12 @@
             </a>
         </li>
         <li class="nav-item">
+            <a class="nav-link" href="/admin/attend">
+                <i class="icon-menu menu-icon"></i>
+                <span class="menu-title">Attend</span>
+            </a>
+        </li>
+        <li class="nav-item">
             <a class="nav-link" href="/admin/image">
                 <i class="icon-image menu-icon"></i>
                 <span class="menu-title"> Images </span>
@@ -38,28 +44,24 @@
                 <span class="menu-title"> Messages </span>
             </a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" href="/admin/settings">
-                <i class="icon-cog menu-icon"></i>
-                <span class="menu-title">Settings</span>
-            </a>
-        </li>
+
         <li class="nav-item">
             <a class="nav-link" href="/admin/faq">
                 <i class=" icon-search menu-icon "></i>
                 <span class="menu-title">FAQ</span>
             </a>
         </li>
-      <!--  <li class="nav-item">
-            <a class="nav-link" href="/admin/attend">
-                <i class="icon-grid menu-icon"></i>
-                <span class="menu-title">Attend</span>
-            </a>
-       </li>  -->
+
         <li class="nav-item">
             <a class="nav-link" href="/admin/social">
                 <i class="icon-share menu-icon"></i>
                 <span class="menu-title">Social Media</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/admin/settings">
+                <i class="icon-cog menu-icon"></i>
+                <span class="menu-title">Settings</span>
             </a>
         </li>
     </ul>

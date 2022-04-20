@@ -10,10 +10,10 @@
         <div class="card">
             <div class="card-body">
                 <h1 class="card-title" >{{$data->title}}</h1>
-                <div class="col-lg-12 grid-margin stretch-card">
+                <div class="col-lg-12 grid-margin stretch-card" >
                     <div class="card">
                         <div class="card-body">
-                            <div class="table-responsive">
+                            <div class="table-responsive pt-3">
                                 <table class="table table-striped">
                                     <tr>
                                      <th style="width: 100px" >Id</th>
@@ -32,8 +32,8 @@
                                         <td>{{$data->description}}</td>
                                     </tr>
                                     <tr>
-                                        <th>Image</th>
-                                        <td>  </td>
+                                        <th style="width:auto ">Image</th>
+
                                     </tr>
                                     <tr>
                                         <th style="width: 100px">Status</th>
@@ -57,5 +57,6 @@
             </div>
         </div>
     </div>
-</div>
+   </div>
+
 @endsection
