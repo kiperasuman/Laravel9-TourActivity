@@ -31,6 +31,7 @@
                                         <th style="width:50px">Location</th>
                                         <th style="width:50px">Activity Date</th>
                                         <th style="width:50px">Image</th>
+                                        <th style="width:50px">Image Gallery </th>
                                         <th style="width: 25px">Status</th>
                                         <th style="width: 1px">Edit</th>
                                         <th style="width: 1px">Delete</th>
@@ -49,10 +50,15 @@
                                         <td>{{$rs->date}}</td>
                                         <td>
                                             @if($rs->image)
-                                                <img src="{{Storage::url($rs->image)}}" style="height: 40px">
+                                                <img src="{{Storage::url($rs->image)}}" style="height:available">
                                             @endif
                                         </td>
-
+                                        <td>
+                                            <a href="{{route('admin.image.index',['cid'=>$rs->id])}}"
+                                            onclick="return !window.open(this.href,'','top=50 left=100 width=1100,height=700' )">
+                                            <img src="{{asset('assetss')}}/admin/images/galleryy.png" style="height:available">
+                                            </a>
+                                        </td>
                                         <td>{{$rs->status}}</td>
                                         <td><a href="{{route('admin.content.edit',['id'=>$rs->id])}}" class="btn btn-inverse-success btn-fw">Edit</a></td>
                                         <td><a href="{{route('admin.content.destroy',['id'=>$rs->id])}}" class="btn btn-inverse-danger btn-fw" onclick="return confirm('Deleting!Are you sure?')">Delete</a></td>

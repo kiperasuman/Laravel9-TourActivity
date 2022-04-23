@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AdminPanel\AdminContentController;
 use App\Http\Controllers\AdminPanel\CategoryController as AdminCategoryController;
+use App\Http\Controllers\AdminPanel\ImageController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminPanel\HomeController as AdminHomeController;
@@ -74,6 +75,14 @@ Route::prefix('admin')->name('admin.')->group(function(){
         Route::post('/update/{id}','update')->name('update');
         Route::get('/destroy/{id}','destroy')->name('destroy');
         Route::get('/show/{id}','show')->name('show');
+    });
+
+    // *********  ADMİN CONTENT IMAGE GALLERY ROUTES  ******** //
+      Route::prefix('/image')->name('image.')->controller(ImageController::class)->group(function(){
+        Route::get('/{cid}','index')->name('index');
+        Route::post('/store/{cid}','store')->name('store');
+        Route::get('/destroy/{cid}/{id}','destroy')->name('destroy');
+
     });
 
 
