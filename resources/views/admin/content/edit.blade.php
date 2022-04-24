@@ -1,6 +1,11 @@
 @extends('layouts.adminbase')
 
-@section('title','Edit Content')
+@section('title','Edit Content: '.$data->title)
+
+@section('head')
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+
+@endsection
 
 @section('content')
     <!-- partial -->
@@ -40,7 +45,7 @@
                     </div>
                     <div class="form-group">
                         <label for="exampleInputName1">Detail Information</label>
-                        <textarea style="size: 15px" class="form-control" name="detail" >
+                        <textarea style="size: 15px" class="form-control" name="detail" id="detail">
                            {{$data->detail}}
                         </textarea>
 
@@ -93,4 +98,12 @@
         </div>
     </div>
  </div>
+@endsection
+@section('foot')
+        <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
+        <script>
+    $(function () {
+        $('.textarea').summernote()
+    })
+</script>
 @endsection

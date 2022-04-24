@@ -2,6 +2,10 @@
 
 @section('title','Add Content')
 
+@section('head')
+    <script src="https://cdn.ckeditor.com/ckeditor5/34.0.0/classic/ckeditor.js"></script>
+@endsection
+
 @section('content')
     <!-- partial -->
 <div class="main-panel">
@@ -39,7 +43,19 @@
                     </div>
                     <div class="form-group">
                         <label for="exampleInputName1">Detail</label>
-                        <textarea style="size: 15px" class="form-control" name="detail"></textarea>
+                        <textarea style="size: 15px" class="form-control" name="detail" id="detail">
+
+                        </textarea>
+                        <script>
+                            ClassicEditor
+                                .create( document.querySelector( '#detail' ) )
+                                .then( editor => {
+                                    console.log( editor );
+                                } )
+                                .catch( error => {
+                                    console.error( error );
+                                } );
+                        </script>
 
                     </div>
                     <div class="form-group">

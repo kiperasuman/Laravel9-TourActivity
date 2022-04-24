@@ -39,7 +39,7 @@
                                         <td>{{$data->description}}</td>
                                     </tr>
                                     <tr> <th style="width: 100px">Detail Information</th>
-                                        <td>{{$data->detail}}</td>
+                                        <td>{!! $data->detail !!}</td>
                                     </tr>
                                     <tr> <th style="width: 100px">Type</th>
                                         <td>{{$data->type}}</td>
