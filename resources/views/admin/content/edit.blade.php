@@ -3,8 +3,7 @@
 @section('title','Edit Content: '.$data->title)
 
 @section('head')
-    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
-
+    <script src="https://cdn.ckeditor.com/ckeditor5/34.0.0/classic/ckeditor.js"></script>
 @endsection
 
 @section('content')
@@ -43,11 +42,22 @@
                         <label for="exampleInputName1">Description</label>
                         <input type="text" class="form-control" name="description" value="{{$data->description}}" >
                     </div>
+
                     <div class="form-group">
                         <label for="exampleInputName1">Detail Information</label>
                         <textarea style="size: 15px" class="form-control" name="detail" id="detail">
                            {{$data->detail}}
                         </textarea>
+                        <script>
+                            ClassicEditor
+                                .create( document.querySelector( '#detail' ) )
+                                .then( editor => {
+                                    console.log( editor );
+                                } )
+                                .catch( error => {
+                                    console.error( error );
+                                } );
+                        </script>
 
                     </div>
                     <div class="form-group">
@@ -100,10 +110,5 @@
  </div>
 @endsection
 @section('foot')
-        <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
-        <script>
-    $(function () {
-        $('.textarea').summernote()
-    })
-</script>
+
 @endsection
