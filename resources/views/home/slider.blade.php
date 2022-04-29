@@ -1,8 +1,10 @@
+
 <div class="slider_wrapper">
     <div id="camera_wrap" class="">
-        <div data-src="{{asset('assetss')}}/images/slide.jpg">
+        @foreach($sliderdata as $rs)
+        <div data-src="{{Storage::url($rs->image)}}" style="width: 1600px; height: 774px">
             <div class="caption fadeIn">
-                <h2>LONDON</h2>
+                <h2>{{$rs->title}}</h2>
                 <div class="price">
                     FROM
                     <span>$1000</span>
@@ -10,25 +12,6 @@
                 <a href="#">LEARN MORE</a>
             </div>
         </div>
-        <div data-src="{{asset('assetss')}}/images/slide1.jpg">
-            <div class="caption fadeIn">
-                <h2>Maldives</h2>
-                <div class="price">
-                    FROM
-                    <span>$2000</span>
-                </div>
-                <a href="#">LEARN MORE</a>
-            </div>
-        </div>
-        <div data-src="{{asset('assetss')}}/images/slide2.jpg">
-            <div class="caption fadeIn">
-                <h2>Venice</h2>
-                <div class="price">
-                    FROM
-                    <span>$1600</span>
-                </div>
-                <a href="#">LEARN MORE</a>
-            </div>
-        </div>
+        @endforeach
     </div>
 </div>
