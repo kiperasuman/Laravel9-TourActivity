@@ -66,16 +66,18 @@
 </head>
 <body class="page1" id="top">
 
-@include("home.header")
+@include('home.header')
+
 @section('slider')
 @show
+
 @section('sidebar')
-    @include("home.sidebar")
+    @include('home.sidebar')
 @show
 
 @yield('content')
 
-@include("home.footer")
+@include('home.footer')
 @yield('foot')
 </body>
 </html>

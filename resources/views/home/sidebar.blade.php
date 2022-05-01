@@ -30,5 +30,6 @@
                 <a href="#">LEARN MORE</a>
             </div>
         </div>
-    </div>
+   </div>
 </div>
+

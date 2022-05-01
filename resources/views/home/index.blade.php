@@ -9,36 +9,18 @@
     <!--==============================Content=================================-->
     <div class="content"><div class="ic"> More Website Templates @ TemplateMonster.com - February 10, 2014!</div>
         <div class="container_12">
+            @foreach($contentdatalist as $rs)
             <div class="grid_4">
                 <div class="banner">
-                    <img src="{{asset('assetss')}}/images/ban_img1.jpg" alt="">
+                    <img src="{{Storage::url($rs->image)}}" alt="">
                     <div class="label">
-                        <div class="title">Barcelona</div>
+                        <div class="title">{{$rs->title}}</div>
                         <div class="price">FROM<span>$ 1000</span></div>
                         <a href="#">LEARN MORE</a>
                     </div>
                 </div>
             </div>
-            <div class="grid_4">
-                <div class="banner">
-                    <img src="{{asset('assetss')}}/images/ban_img2.jpg" alt="">
-                    <div class="label">
-                        <div class="title">GOA</div>
-                        <div class="price">FROM<span>$ 1.500</span></div>
-                        <a href="#">LEARN MORE</a>
-                    </div>
-                </div>
-            </div>
-            <div class="grid_4">
-                <div class="banner">
-                    <img src="{{asset('assetss')}}/images/ban_img3.jpg" alt="">
-                    <div class="label">
-                        <div class="title">PARIS</div>
-                        <div class="price">FROM<span>$ 1.600</span></div>
-                        <a href="#">LEARN MORE</a>
-                    </div>
-                </div>
-            </div>
+            @endforeach
             <div class="clear"></div>
             <div class="grid_6">
                 <h3>Booking Form</h3>

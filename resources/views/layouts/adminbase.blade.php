@@ -22,15 +22,15 @@
     @yield("head")
 </head>
 <body>
-@include("admin.header")
+@include('admin.header')
 
-@section("sidebar")
-    @include("admin.sidebar")
+@section('sidebar')
+    @include('admin.sidebar')
 @show
 
-@yield("content")
+@yield('content')
 
-@include("admin.footer")
+@include('admin.footer')
 @yield('foot')
 
 </body>
