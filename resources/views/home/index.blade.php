@@ -5,6 +5,7 @@
 @section('slider')
     @include('home.slider')
 @show
+
 @section('content')
     <!--==============================Content=================================-->
     <div class="content"><div class="ic"> More Website Templates @ TemplateMonster.com - February 10, 2014!</div>
@@ -12,12 +13,14 @@
             @foreach($contentdatalist as $rs)
             <div class="grid_4">
                 <div class="banner">
-                    <img src="{{Storage::url($rs->image)}}" alt="">
+                    <br>
+                    <img src="{{Storage::url($rs->image)}}" style="height:275px;width: 300px">
                     <div class="label">
-                        <div class="title">{{$rs->title}}</div>
+                        <div class="title" style="font-size: medium ">{{$rs->title}}</div>
                         <div class="price">FROM<span>$ 1000</span></div>
                         <a href="#">LEARN MORE</a>
                     </div>
+                    </br>
                 </div>
             </div>
             @endforeach

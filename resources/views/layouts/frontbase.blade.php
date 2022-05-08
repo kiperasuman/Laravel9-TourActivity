@@ -68,14 +68,21 @@
 
 @include('home.header')
 
+<!--
+     burası sorun çıkartıyordu
+     yorum satırına aldım
+     sorun:: iki kez döngüye giriyordu
 @section('slider')
 @show
+
+-->
 
 @section('sidebar')
     @include('home.sidebar')
 @show
 
 @yield('content')
+
 
 @include('home.footer')
 @yield('foot')
