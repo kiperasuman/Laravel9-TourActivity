@@ -18,7 +18,7 @@
                     <div class="label">
                         <div class="title" style="font-size: medium ">{{$rs->title}}</div>
                         <div class="price">FROM<span>$ 1000</span></div>
-                        <a href="#">LEARN MORE</a>
+                        <a href="{{route('content',['id'=>$rs->id])}}">LEARN MORE</a>
                     </div>
                     </br>
                 </div>

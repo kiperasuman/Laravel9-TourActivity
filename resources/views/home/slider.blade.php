@@ -8,7 +8,7 @@
                         FROM
                         <span>$1000</span>
                     </div>
-                    <a href="#">LEARN MORE</a>
+                    <a href="{{route('content',['id'=>$rs->id])}}">LEARN MORE</a>
                 </div>
             </div>
         @endforeach

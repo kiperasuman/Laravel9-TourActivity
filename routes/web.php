@@ -40,7 +40,7 @@ Route::get('/param/{id}/{number}',[HomeController::class,'param'])->name('param'
 // 6- Route with post
 
 Route::get('/save',[HomeController::class,'save'])->name('save');
-
+Route::get('/content/{id}',[HomeController::class,'content'])->name('content');
 
 
 /*

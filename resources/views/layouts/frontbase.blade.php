@@ -74,8 +74,8 @@
      sorun:: iki kez döngüye giriyordu
 @section('slider')
 @show
+    -->
 
--->
 
 @section('sidebar')
     @include('home.sidebar')
