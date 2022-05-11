@@ -2,155 +2,281 @@
 
 @section('title','Tour Activity')
 
-@section('slider')
-    @include('home.slider')
-@show
 
 @section('content')
-    <!--==============================Content=================================-->
-    <div class="content"><div class="ic"> More Website Templates @ TemplateMonster.com - February 10, 2014!</div>
-        <div class="container_12">
-            @foreach($contentdatalist as $rs)
-            <div class="grid_4">
-                <div class="banner">
-                    <br>
-                    <img src="{{Storage::url($rs->image)}}" style="height:275px;width: 300px">
-                    <div class="label">
-                        <div class="title" style="font-size: medium ">{{$rs->title}}</div>
-                        <div class="price">FROM<span>$ 1000</span></div>
-                        <a href="{{route('content',['id'=>$rs->id])}}">LEARN MORE</a>
-                    </div>
-                    </br>
-                </div>
-            </div>
-            @endforeach
-            <div class="clear"></div>
-            <div class="grid_6">
-                <h3>Booking Form</h3>
-                <form id="bookingForm">
-                    <div class="fl1">
-                        <div class="tmInput">
-                            <input name="Name" placeHolder="Name:" type="text" data-constraints='@NotEmpty @Required @AlphaSpecial'>
+
+    <!-- about_area_start -->
+    <div class="about_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-5 col-lg-5">
+                    <div class="about_info">
+                        <div class="section_title mb-20px">
+                            <span>About Us</span>
+                            <h3>A Luxuries Hotel <br>
+                                with Nature</h3>
                         </div>
-                        <div class="tmInput">
-                            <input name="Country" placeHolder="Country:" type="text" data-constraints="@NotEmpty @Required">
-                        </div>
-                    </div>
-                    <div class="fl1">
-                        <div class="tmInput">
-                            <input name="Email" placeHolder="Email:" type="text" data-constraints="@NotEmpty @Required @Email">
-                        </div>
-                        <div class="tmInput mr0">
-                            <input name="Hotel" placeHolder="Hotel:" type="text" data-constraints="@NotEmpty @Required">
-                        </div>
-                    </div>
-                    <div class="clear"></div>
-                    <strong>Check-in</strong>
-                    <label class="tmDatepicker">
-                        <input type="text" name="Check-in" placeHolder='10/05/2014' data-constraints="@NotEmpty @Required @Date">
-                    </label>
-                    <div class="clear"></div>
-                    <strong>Check-out</strong>
-                    <label class="tmDatepicker">
-                        <input type="text" name="Check-out" placeHolder='20/05/2014' data-constraints="@NotEmpty @Required @Date">
-                    </label>
-                    <div class="clear"></div>
-                    <div class="tmRadio">
-                        <p>Comfort</p>
-                        <input name="Comfort" type="radio" id="tmRadio0" data-constraints='@RadioGroupChecked(name="Comfort", groups=[RadioGroup])' checked/>
-                        <span>Cheap</span>
-                        <input name="Comfort" type="radio" id="tmRadio1" data-constraints='@RadioGroupChecked(name="Comfort", groups=[RadioGroup])' />
-                        <span>Standart</span>
-                        <input name="Comfort" type="radio" id="tmRadio2" data-constraints='@RadioGroupChecked(name="Comfort", groups=[RadioGroup])' />
-                        <span>Lux</span>
-                    </div>
-                    <div class="clear"></div>
-                    <div class="fl1 fl2">
-                        <em>Adults</em>
-                        <select name="Adults" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
-                            <option>1</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                        </select>
-                        <div class="clear"></div>
-                        <em>Rooms</em>
-                        <select name="Rooms" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
-                            <option>1</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                        </select>
-                    </div>
-                    <div class="fl1 fl2">
-                        <em>Children</em>
-                        <select name="Children" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
-                            <option>0</option>
-                            <option>0</option>
-                            <option>1</option>
-                            <option>2</option>
-                        </select>
-                    </div>
-                    <div class="clear"></div>
-                    <div class="tmTextarea">
-                        <textarea name="Message" placeHolder="Message" data-constraints='@NotEmpty @Required @Length(min=20,max=999999)'></textarea>
-                    </div>
-                    <a href="#" class="btn" data-type="submit">Submit</a>
-                </form>
-            </div>
-            <div class="grid_5 prefix_1">
-                <h3>Welcome</h3>
-                <img src="{{asset('assetss')}}/images/page1_img1.jpg" alt="" class="img_inner fleft">
-                <div class="extra_wrapper">
-                    <p>Lorem ipsum dolor sit ere amet, consectetur ipiscin.</p>
-                    In mollis erat mattis neque facilisis, sit ametiol
-                </div>
-                <div class="clear cl1"></div>
-                <p>Find the detailed description of this <span class="col1"><a href="http://blog.templatemonster.com/free-website-templates/" rel="dofollow">freebie</a></span> at TemplateMonster blog.</p>
-                <p><span class="col1"><a href="http://www.templatemonster.com/category/travel-website-templates/" rel="nofollow">Travel Website Templates</a></span> category offers you a variety of designs that are perfect for travel sphere of business.</p>
-                Proin pharetra luctus diam, a scelerisque eros convallis
-                <h4>Clients’ Quotes</h4>
-                <blockquote class="bq1">
-                    <img src="{{asset('assetss')}}/images/page1_img2.jpg" alt="" class="img_inner noresize fleft">
-                    <div class="extra_wrapper">
-                        <p>Duis massa elit, auctor non pellentesque vel, aliquet sit amet erat. Nullam eget dignissim nisi, aliquam feugiat nibh. </p>
-                        <div class="alright">
-                            <div class="col1">Miranda Brown</div>
-                            <a href="#" class="btn">More</a>
-                        </div>
-                    </div>
-                </blockquote>
-            </div>
-            <div class="grid_12">
-                <h3 class="head1">Latest News</h3>
-            </div>
-            <div class="grid_4">
-                <div class="block1">
-                    <time datetime="2014-01-01">10<span>Jan</span></time>
-                    <div class="extra_wrapper">
-                        <div class="text1 col1"><a href="#">Aliquam nibh</a></div>
-                        Proin pharetra luctus diam, any scelerisque eros convallisumsan. Maecenas vehicula egestas
+                        <p>Suscipit libero pretium nullam potenti. Interdum, blandit phasellus consectetuer dolor ornare
+                            dapibus enim ut tincidunt rhoncus tellus sollicitudin pede nam maecenas, dolor sem. Neque
+                            sollicitudin enim. Dapibus lorem feugiat facilisi faucibus et. Rhoncus.</p>
+                        <a href="#" class="line-button">Learn More</a>
                     </div>
                 </div>
-            </div>
-            <div class="grid_4">
-                <div class="block1">
-                    <time datetime="2014-01-01">21<span>Jan</span></time>
-                    <div class="extra_wrapper">
-                        <div class="text1 col1"><a href="#">Etiam dui eros</a></div>
-                        Any scelerisque eros vallisumsan. Maecenas vehicula egestas natis. Duis massa elit, auctor non
-                    </div>
-                </div>
-            </div>
-            <div class="grid_4">
-                <div class="block1">
-                    <time datetime="2014-01-01">15<span>Feb</span></time>
-                    <div class="extra_wrapper">
-                        <div class="text1 col1"><a href="#">uamnibh Edeto</a></div>
-                        Ros convallisumsan. Maecenas vehicula egestas venenatis. Duis massa elit, auctor non
+                <div class="col-xl-7 col-lg-7">
+                    <div class="about_thumb d-flex">
+                        <div class="img_1">
+                            <img src="{{asset('assets')}}/img/about/about_1.png" alt="">
+                        </div>
+                        <div class="img_2">
+                            <img src="{{asset('assets')}}/img/about/about_2.png" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- about_area_end -->
+
+    <!-- offers_area_start -->
+    <div class="offers_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section_title text-center mb-100">
+                        <span>Our Offers</span>
+                        <h3>Ongoing Offers</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-4 col-md-4">
+                    <div class="single_offers">
+                        <div class="about_thumb">
+                            <img src="{{asset('assets')}}/img/offers/1.png" alt="">
+                        </div>
+                        <h3>Up to 35% savings on Club <br>
+                            rooms and Suites</h3>
+                        <ul>
+                            <li>Luxaries condition</li>
+                            <li>3 Adults & 2 Children size</li>
+                            <li>Sea view side</li>
+                        </ul>
+                        <a href="#" class="book_now">book now</a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4">
+                    <div class="single_offers">
+                        <div class="about_thumb">
+                            <img src="{{asset('assets')}}/img/offers/2.png" alt="">
+                        </div>
+                        <h3>Up to 35% savings on Club <br>
+                            rooms and Suites</h3>
+                        <ul>
+                            <li>Luxaries condition</li>
+                            <li>3 Adults & 2 Children size</li>
+                            <li>Sea view side</li>
+                        </ul>
+                        <a href="#" class="book_now">book now</a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4">
+                    <div class="single_offers">
+                        <div class="about_thumb">
+                            <img src="{{asset('assets')}}/img/offers/3.png" alt="">
+                        </div>
+                        <h3>Up to 35% savings on Club <br>
+                            rooms and Suites</h3>
+                        <ul>
+                            <li>Luxaries condition</li>
+                            <li>3 Adults & 2 Children size</li>
+                            <li>Sea view side</li>
+                        </ul>
+                        <a href="#" class="book_now">book now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- offers_area_end -->
+
+    <!-- video_area_start -->
+    <div class="video_area video_bg overlay">
+        <div class="video_area_inner text-center">
+            <span>Montana Sea View</span>
+            <h3>Relax and Enjoy your <br>
+                Vacation </h3>
+            <a href="https://www.youtube.com/watch?v=vLnPwxZdW4Y" class="video_btn popup-video">
+                <i class="fa fa-play"></i>
+            </a>
+        </div>
+    </div>
+    <!-- video_area_end -->
+
+    <!-- about_area_start -->
+    <div class="about_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-7 col-lg-7">
+                    <div class="about_thumb2 d-flex">
+                        <div class="img_1">
+                            <img src="{{asset('assets')}}/img/about/1.png" alt="">
+                        </div>
+                        <div class="img_2">
+                            <img src="{{asset('assets')}}/img/about/2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-lg-5">
+                    <div class="about_info">
+                        <div class="section_title mb-20px">
+                            <span>Delicious Food</span>
+                            <h3>We Serve Fresh and <br>
+                                Delicious Food</h3>
+                        </div>
+                        <p>Suscipit libero pretium nullam potenti. Interdum, blandit phasellus consectetuer dolor ornare
+                            dapibus enim ut tincidunt rhoncus tellus sollicitudin pede nam maecenas, dolor sem. Neque
+                            sollicitudin enim. Dapibus lorem feugiat facilisi faucibus et. Rhoncus.</p>
+                        <a href="#" class="line-button">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- about_area_end -->
+
+    <!-- features_room_startt -->
+    <div class="features_room">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section_title text-center mb-100">
+                        <span>Featured Rooms</span>
+                        <h3>Choose a Better Room</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rooms_here">
+            <div class="single_rooms">
+                <div class="room_thumb">
+                    <img src="{{asset('assets')}}/img/rooms/1.png" alt="">
+                    <div class="room_heading d-flex justify-content-between align-items-center">
+                        <div class="room_heading_inner">
+                            <span>From $250/night</span>
+                            <h3>Superior Room</h3>
+                        </div>
+                        <a href="#" class="line-button">book now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="single_rooms">
+                <div class="room_thumb">
+                    <img src="{{asset('assets')}}/img/rooms/2.png" alt="">
+                    <div class="room_heading d-flex justify-content-between align-items-center">
+                        <div class="room_heading_inner">
+                            <span>From $250/night</span>
+                            <h3>Deluxe Room</h3>
+                        </div>
+                        <a href="#" class="line-button">book now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="single_rooms">
+                <div class="room_thumb">
+                    <img src="{{asset('assets')}}/img/rooms/3.png" alt="">
+                    <div class="room_heading d-flex justify-content-between align-items-center">
+                        <div class="room_heading_inner">
+                            <span>From $250/night</span>
+                            <h3>Signature Room</h3>
+                        </div>
+                        <a href="#" class="line-button">book now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="single_rooms">
+                <div class="room_thumb">
+                    <img src="{{asset('assets')}}/img/rooms/4.png" alt="">
+                    <div class="room_heading d-flex justify-content-between align-items-center">
+                        <div class="room_heading_inner">
+                            <span>From $250/night</span>
+                            <h3>Couple Room</h3>
+                        </div>
+                        <a href="#" class="line-button">book now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- features_room_end -->
+
+    <!-- forQuery_start -->
+    <div class="forQuery">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-10 offset-xl-1 col-md-12">
+                    <div class="Query_border">
+                        <div class="row align-items-center justify-content-center">
+                            <div class="col-xl-6 col-md-6">
+                                <div class="Query_text">
+                                    <p>For Reservation 0r Query?</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-md-6">
+                                <div class="phone_num">
+                                    <a href="#" class="mobile_no">+10 576 377 4789</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- forQuery_end-->
+
+    <!-- instragram_area_start -->
+    <div class="instragram_area">
+        <div class="single_instagram">
+            <img src="{{asset('assets')}}/img/instragram/1.png" alt="">
+            <div class="ovrelay">
+                <a href="#">
+                    <i class="fa fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+        <div class="single_instagram">
+            <img src="{{asset('assets')}}/img/instragram/2.png" alt="">
+            <div class="ovrelay">
+                <a href="#">
+                    <i class="fa fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+        <div class="single_instagram">
+            <img src="{{asset('assets')}}/img/instragram/3.png" alt="">
+            <div class="ovrelay">
+                <a href="#">
+                    <i class="fa fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+        <div class="single_instagram">
+            <img src="{{asset('assets')}}/img/instragram/4.png" alt="">
+            <div class="ovrelay">
+                <a href="#">
+                    <i class="fa fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+        <div class="single_instagram">
+            <img src="{{asset('assets')}}/img/instragram/5.png" alt="">
+            <div class="ovrelay">
+                <a href="#">
+                    <i class="fa fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- instragram_area_end -->
+
 @endsection

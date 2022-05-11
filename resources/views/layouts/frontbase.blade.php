@@ -1,80 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>@yield("title")</title>
-    <meta charset="utf-8">
-    <meta name="format-detection" content="telephone=no" />
-    <link rel="icon" href="images/favicon.ico">
-    <link rel="shortcut icon" href="images/favicon.ico" />
-    <link rel="stylesheet" href="{{asset('assetss')}}/booking/css/booking.css">
-    <link rel="stylesheet" href="{{asset('assetss')}}/css/camera.css">
-    <link rel="stylesheet" href="{{asset('assetss')}}/css/owl.carousel.css">
-    <link rel="stylesheet" href="{{asset('assetss')}}/css/style.css">
-    <script src="{{asset('assetss')}}/js/jquery.js"></script>
-    <script src="{{asset('assetss')}}/js/jquery-migrate-1.2.1.js"></script>
-    <script src="{{asset('assetss')}}/js/script.js"></script>
-    <script src="{{asset('assetss')}}/js/superfish.js"></script>
-    <script src="{{asset('assetss')}}/js/jquery.ui.totop.js"></script>
-    <script src="{{asset('assetss')}}/js/jquery.equalheights.js"></script>
-    <script src="{{asset('assetss')}}/js/jquery.mobilemenu.js"></script>
-    <script src="{{asset('assetss')}}/js/jquery.easing.1.3.js"></script>
-    <script src="{{asset('assetss')}}/js/owl.carousel.js"></script>
-    <script src="{{asset('assetss')}}/js/camera.js"></script>
-    <!--[if (gt IE 9)|!(IE)]><!-->
-    <script src="{{asset('assetss')}}/js/jquery.mobile.customized.min.js"></script>
-    <!--<![endif]-->
-    <script src="{{asset('assetss')}}/booking/js/booking.js"></script>
-    <script>
-        $(document).ready(function(){
-            jQuery('#camera_wrap').camera({
-                loader: false,
-                pagination: false ,
-                minHeight: '444',
-                thumbnails: false,
-                height: '48.375%',
-                caption: true,
-                navigation: true,
-                fx: 'mosaic'
-            });
-            /*carousel*/
-            var owl=$("#owl");
-            owl.owlCarousel({
-                items : 2, //10 items above 1000px browser width
-                itemsDesktop : [995,2], //5 items between 1000px and 901px
-                itemsDesktopSmall : [767, 2], // betweem 900px and 601px
-                itemsTablet: [700, 2], //2 items between 600 and 0
-                itemsMobile : [479, 1], // itemsMobile disabled - inherit from itemsTablet option
-                navigation : true,
-                pagination : false
-            });
-            $().UItoTop({ easingType: 'easeOutQuart' });
-        });
-    </script>
-    <!--[if lt IE 8]>
-    <div style=' clear: both; text-align:center; position: relative;'>
-        <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
-            <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
-        </a>
-    </div>
-    <![endif]-->
-    <!--[if lt IE 9]>
-    <script src="{{asset('assetss')}}/js/html5shiv.js"></script>
-    <link rel="stylesheet" media="screen" href="{{asset('assetss')}}/css/ie.css">
-    <![endif]-->
+<!doctype html>
+<html class="no-js" lang="zxx">
 
-    @yield("head")
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>@yield('title')</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="{{asset('assets')}}/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{asset('assets')}}/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="{{asset('assets')}}/css/magnific-popup.css">
+    <link rel="stylesheet" href="{{asset('assets')}}/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{asset('assets')}}/css/themify-icons.css">
+    <link rel="stylesheet" href="{{asset('assets')}}/css/nice-select.css">
+    <link rel="stylesheet" href="{{asset('assets')}}/css/flaticon.css">
+    <link rel="stylesheet" href="{{asset('assets')}}/css/gijgo.css">
+    <link rel="stylesheet" href="{{asset('assets')}}/css/animate.css">
+    <link rel="stylesheet" href="{{asset('assets')}}/css/slicknav.css">
+    <link rel="stylesheet" href="{{asset('assets')}}/css/style.css">
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+    @yield('head')
 </head>
-<body class="page1" id="top">
+<body>
 
 @include('home.header')
+
 
 <!--
      burası sorun çıkartıyordu
      yorum satırına aldım
      sorun:: iki kez döngüye giriyordu
+ burada section slider ve show vardı sildim
+
+-->
 @section('slider')
+    @include('home.slider')
 @show
-    -->
 
 
 @section('sidebar')

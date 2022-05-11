@@ -1,17 +1,55 @@
-<div class="slider_wrapper">
-    <div id="camera_wrap" class="">
-        @foreach($sliderdata as $rs)
-            <div data-src="{{Storage::url($rs->image)}}" style="width: 1600px; height:774px">
-                <div class="caption fadeIn">
-                    <h2>{{$rs->title}}</h2>
-                    <div class="price">
-                        FROM
-                        <span>$1000</span>
+<!-- slider_area_start -->
+<div class="slider_area">
+    <div class="slider_active owl-carousel">
+        <div class="single_slider d-flex align-items-center justify-content-center slider_bg_1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="slider_text text-center">
+                            <h3>Montana Resort</h3>
+                            <p>Unlock to enjoy the view of Martine</p>
+                        </div>
                     </div>
-                    <a href="{{route('content',['id'=>$rs->id])}}">LEARN MORE</a>
                 </div>
             </div>
-        @endforeach
+        </div>
+        <div class="single_slider  d-flex align-items-center justify-content-center slider_bg_2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="slider_text text-center">
+                            <h3>Life is Beautiful</h3>
+                            <p>Unlock to enjoy the view of Martine</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="single_slider d-flex align-items-center justify-content-center slider_bg_1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="slider_text text-center">
+                            <h3>Montana Resort</h3>
+                            <p>Unlock to enjoy the view of Martine</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="single_slider  d-flex align-items-center justify-content-center slider_bg_2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="slider_text text-center">
+                            <h3>Life is Beautiful</h3>
+                            <p>Unlock to enjoy the view of Martine</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
+<!-- slider_area_end -->
 
