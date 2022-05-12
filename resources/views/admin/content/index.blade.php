@@ -56,7 +56,7 @@
                                         <td>
                                             <a href="{{route('admin.image.index',['cid'=>$rs->id])}}"
                                             onclick="return !window.open(this.href,'','top=50 left=100 width=1100,height=700' )">
-                                            <img src="{{asset('assetss')}}/admin/images/galleryy.png" style="height:available">
+                                            <img src="{{asset('assets')}}/admin/images/galleryy.png" style="height:available">
                                             </a>
                                         </td>
                                         <td>{{$rs->status}}</td>

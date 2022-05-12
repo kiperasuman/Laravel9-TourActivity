@@ -1,55 +1,37 @@
-<!-- slider_area_start -->
-<div class="slider_area">
-    <div class="slider_active owl-carousel">
-        <div class="single_slider d-flex align-items-center justify-content-center slider_bg_1">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-12">
-                        <div class="slider_text text-center">
-                            <h3>Montana Resort</h3>
-                            <p>Unlock to enjoy the view of Martine</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="single_slider  d-flex align-items-center justify-content-center slider_bg_2">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-12">
-                        <div class="slider_text text-center">
-                            <h3>Life is Beautiful</h3>
-                            <p>Unlock to enjoy the view of Martine</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="single_slider d-flex align-items-center justify-content-center slider_bg_1">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-12">
-                        <div class="slider_text text-center">
-                            <h3>Montana Resort</h3>
-                            <p>Unlock to enjoy the view of Martine</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="single_slider  d-flex align-items-center justify-content-center slider_bg_2">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-12">
-                        <div class="slider_text text-center">
-                            <h3>Life is Beautiful</h3>
-                            <p>Unlock to enjoy the view of Martine</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+<div class="banner">
+    <div class="owl-four owl-carousel" itemprop="image">
+        <img src="{{asset('assets')}}/images/page-banner.jpg" alt="Image of Bannner">
+        <img src="{{asset('assets')}}/images/page-banner2.jpg" alt="Image of Bannner">
+        <img src="{{asset('assets')}}/images/page-banner3.jpg" alt="Image of Bannner">
     </div>
+    <div class="container" itemprop="description">
+        <h1>welcome to education pro</h1>
+        <h3>With our advance search feature you can now find the trips for you...</h3>
+    </div>
+    <div id="owl-four-nav" class="owl-nav"></div>
 </div>
-<!-- slider_area_end -->
-
+<!-- <div class="banner">
+    <div class="owl-five owl-carousel owl-theme">
+        <div class="item-video">
+            <iframe width="100%" height="450" src="https://www.youtube.com/embed/ENVW3uZ3a-4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+        </div>
+        <div class="item-video">
+            <iframe width="100%" height="450" src="https://www.youtube.com/embed/0bfk90rWV9U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="item-video">
+            <iframe width="100%" height="450" src="https://www.youtube.com/embed/ktvTqknDobU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="item-video">
+            <iframe width="100%" height="450" src="https://www.youtube.com/embed/ENVW3uZ3a-4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+        </div>
+        <div class="item-video">
+            <iframe width="100%" height="450" src="https://www.youtube.com/embed/0bfk90rWV9U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="item-video">
+            <iframe width="100%" height="450" src="https://www.youtube.com/embed/ktvTqknDobU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+  </div>
+</div> -->
+<!-- Banner Close -->

@@ -1,77 +1,74 @@
-<!--[if lte IE 9]>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-<![endif]-->
-
-<!-- header-start -->
-<header>
-    <div class="header-area ">
-        <div id="sticky-header" class="main-header-area">
-            <div class="container-fluid p-0">
-                <div class="row align-items-center no-gutters">
-                    <div class="col-xl-5 col-lg-6">
-                        <div class="main-menu  d-none d-lg-block">
-                            <nav>
-                                <ul id="navigation">
-                                    <li><a class="active" href="index.html">home</a></li>
-                                    <li><a href="rooms.html">rooms</a></li>
-                                    <li><a href="about.html">About</a></li>
-                                    <li><a href="#">blog <i class="ti-angle-down"></i></a>
-                                        <ul class="submenu">
-                                            <li><a href="blog.html">blog</a></li>
-                                            <li><a href="single-blog.html">single-blog</a></li>
-                                            <li><a href="single-blog.html">single-blog 1</a></li>
-                                            <li><a href="single-blog.html">single-blog 2</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">pages <i class="ti-angle-down"></i></a>
-                                        <ul class="submenu">
-                                            <li><a href="elements.html">elements</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="contact.html">Contact</a></li>
-                                </ul>
-                            </nav>
-                        </div>
+<header class="site-header">
+        <div class="top-header">
+            <div class="container">
+                <div class="top-header-left">
+                    <div class="top-header-block">
+                        <a href="mailto:info@educationpro.com" itemprop="email"><i class="fas fa-envelope"></i> info@educationpro.com</a>
                     </div>
-                    <div class="col-xl-2 col-lg-2">
-                        <div class="logo-img">
-                            <a href="index.html">
-                                <img src="{{asset('assets')}}/img/logo.png" alt="">
-                            </a>
-                        </div>
+                    <div class="top-header-block">
+                        <a href="tel:+9779813639131" itemprop="telephone"><i class="fas fa-phone"></i> +977 9813639131</a>
                     </div>
-                    <div class="col-xl-5 col-lg-4 d-none d-lg-block">
-                        <div class="book_room">
-                            <div class="socail_links">
-                                <ul>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-facebook-square"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-twitter"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-instagram"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="book_btn d-none d-lg-block">
-                                <a class="popup-with-form" href="#test-form">Book A Room</a>
-                            </div>
-                        </div>
+                </div>
+                <div class="top-header-right">
+                    <div class="social-block">
+                        <ul class="social-list">
+                            <li><a href=""><i class="fab fa-viber"></i></a></li>
+                            <li><a href=""><i class="fab fa-google-plus-g"></i></a></li>
+                            <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+                            <li><a href=""><i class="fab fa-facebook-messenger"></i></a></li>
+                            <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fab fa-skype"></i></a></li>
+                        </ul>
                     </div>
-                    <div class="col-12">
-                        <div class="mobile_menu d-block d-lg-none"></div>
+                    <div class="login-block">
+                        <a href="">Login /</a>
+                        <a href="">Register</a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+        <!-- Top header Close -->
+        <div class="main-header">
+            <div class="container">
+                <div class="logo-wrap" itemprop="logo">
+                    <img src="{{asset('assets')}}/images/site-logo.jpg" alt="Logo Image">
+                    <!-- <h1>Education</h1> -->
+                </div>
+                <div class="nav-wrap">
+                    <nav class="nav-desktop">
+                        <ul class="menu-list">
+                            <li><a href="#">Home</a></li>
+                            <li class="menu-parent">Courses
+                                <ul class="sub-menu">
+                                    <li><a href="#">Child</a></li>
+                                    <li><a href="#">Child</a></li>
+                                    <li class="menu-parent">Child
+                                        <ul class="sub-menu">
+                                            <li><a href="">Grand-child</a></li>
+                                            <li><a href="">Grand-child</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-parent">News
+                                <ul class="sub-menu">
+                                    <li><a href="#">Child</a></li>
+                                    <li><a href="#">Child</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Gallery</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div id="bar">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <div id="close">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
 </header>
-<!-- header-end -->
+    <!-- Header Close -->
