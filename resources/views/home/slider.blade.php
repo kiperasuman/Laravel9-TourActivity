@@ -4,8 +4,8 @@
         @foreach($sliderdata as $rs)
         <div class="hero__items set-bg" data-setbg="{{Storage::url($rs->image)}}">
             <div class="hero__text">
-                <h2>Quality is not only our standard.</h2>
-                <a href="#" class="primary-btn">See Project</a>
+                <h2>{{$rs->title}}</h2>
+                <a href="{{route('content',['id'=>$rs->id])}}" class="primary-btn">See Project</a>
                 <a href="#" class="more_btn">Discover more</a>
                 <div class="hero__social">
                     <a href="#"><i class="fa fa-facebook"></i></a>
@@ -16,19 +16,6 @@
             </div>
         </div>
         @endforeach
-        <div class="hero__items set-bg" data-setbg="{{asset('assets')}}/img/hero/hero-1.jpg">
-            <div class="hero__text">
-                <h2>Quality is not only our standard.</h2>
-                <a href="#" class="primary-btn">See Project</a>
-                <a href="#" class="more_btn">Discover more</a>
-                <div class="hero__social">
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-instagram"></i></a>
-                    <a href="#"><i class="fa fa-linkedin"></i></a>
-                </div>
-            </div>
-        </div>
     </div>
     <div class="slide-num" id="snh-1"></div>
     <div class="slider__progress"><span></span></div>
