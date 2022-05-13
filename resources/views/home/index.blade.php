@@ -1,6 +1,10 @@
 @extends('layouts.frontbase')
 
-@section('title','Tour Activity')
+@section('title','Tour|Activity')
+
+@section('slider')
+    @include('home.slider')
+@endsection
 
 @section('content')
     <!-- About Section Begin -->

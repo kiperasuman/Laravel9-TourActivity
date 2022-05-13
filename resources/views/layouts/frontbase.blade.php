@@ -31,17 +31,14 @@
 @include('home.header')
 <!-- burası sorun çıkartıyordu yorum satırına aldım sorun:: iki kez döngüye giriyordu  burada section slider ve show vardı sildim-->
 
-@section('slider')
-    @include('home.slider')
-@show
-
 @section('sidebar')
     @include('home.sidebar')
 @show
 
+@section('slider')
+@show
 
 @yield('content')
-
 
 @include('home.footer')
 @yield('foot')
