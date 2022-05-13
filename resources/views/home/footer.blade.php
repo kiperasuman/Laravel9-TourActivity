@@ -1,133 +1,107 @@
-<footer class="page-footer" itemprop="footer" itemscope itemtype="http://schema.org/WPFooter">
-    <div class="footer-first-section">
-        <div class="container">
-            <div class="box-wrap" itemprop="about">
-                <header>
-                    <h1>about</h1>
-                </header>
-                <p>Edulab is a great start for and education. Personnel or oganization to start the online business with 1 click</p>
-
-                <h4><a href="tel:+9779813639131"><i class="fas fa-phone"></i> +977 9813639131</a></h4>
-                <h4><a href="mailto:info@educationpro.com"><i class="fas fa-envelope"></i> info@educationpro.com</a></h4>
-                <h4><a href=""><i class="fas fa-map-marker-alt"></i>Gongabu, Kathmandu, Nepal</a></h4>
-            </div>
-
-            <div class="box-wrap">
-                <header>
-                    <h1>links</h1>
-                </header>
-                <ul>
-                    <li><a href="#">Teacher</a></li>
-                    <li><a href="#">Courses</a></li>
-                    <li><a href="#">Courses</a></li>
-                    <li><a href="#">Courses</a></li>
-                    <li><a href="#">Courses</a></li>
-                    <li><a href="#">Courses</a></li>
-                </ul>
-            </div>
-
-            <div class="box-wrap">
-                <header>
-                    <h1>recent courses</h1>
-                </header>
-                <div class="recent-course-wrap">
-                    <img src="{{asset('assets')}}/images/ui-ux.jpg" alt="Ui/Ux Designing">
-                    <a href=""><div class="course-name">
-                            <h3>UI/UX Designer courses</h3>
-                            <p><span>$50</span> $40</p>
-                        </div></a>
+<!-- Footer Section Begin -->
+<footer class="footer set-bg" data-setbg="{{asset('assets')}}/img/footer-bg.jpg">
+    <div class="container">
+        <div class="footer__top">
+            <div class="row">
+                <div class="col-lg-8 col-md-6">
+                    <div class="footer__top__text">
+                        <h2>Ready To Work With Us?</h2>
+                    </div>
                 </div>
-                <div class="recent-course-wrap">
-                    <img src="{{asset('assets')}}/images/ui-ux.jpg" alt="Ui/Ux Designing">
-                    <a href=""><div class="course-name">
-                            <h3>UI/UX Designer courses</h3>
-                            <p><span>$50</span> $40</p>
-                        </div></a>
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer__top__newslatter">
+                        <form action="#">
+                            <input type="text" placeholder="Enter your email...">
+                            <button type="submit"><i class="fa fa-send"></i></button>
+                        </form>
+                    </div>
                 </div>
             </div>
-
-            <div class="box-wrap">
-                <header>
-                    <h1>quick contact</h1>
-                </header>
-                <section class="quick-contact">
-                    <input type="email" name="email" placeholder="Your Email*">
-                    <textarea placeholder="Type your message*"></textarea>
-                    <button>send message</button>
-                </section>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="footer__about">
+                    <div class="footer__logo">
+                        <a href="#"><img src="{{asset('assets')}}/img/logo.png" alt=""></a>
+                    </div>
+                    <p>7176 Blue Spring Lane <br />Santa Monica, CA 90403</p>
+                    <ul>
+                        <li>Info.colorlib@gmail.com</li>
+                        <li>+84 123 456 789</li>
+                    </ul>
+                    <div class="footer__social">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
             </div>
-
+            <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
+                <div class="footer__widget">
+                    <h6>Company</h6>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Our Works</a></li>
+                        <li><a href="#">Career</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-6">
+                <div class="footer__widget">
+                    <h6>Services</h6>
+                    <ul>
+                        <li><a href="#">Architecture</a></li>
+                        <li><a href="#">Interior Design</a></li>
+                        <li><a href="#">Exterior Design</a></li>
+                        <li><a href="#">Planning</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="footer__address">
+                    <h6>Get In Touch</h6>
+                    <p>7176 Blue Spring Lane <br />Santa Monica, CA 90403</p>
+                    <ul>
+                        <li>Info.colorlib@gmail.com</li>
+                        <li>+84 123 456 789</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </div>
-    <!-- End of box-Wrap -->
-    <div class="footer-second-section">
-        <div class="container">
-            <hr class="footer-line">
-            <ul class="social-list">
-                <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
-                <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                <li><a href=""><i class="fab fa-skype"></i></a></li>
-                <li><a href=""><i class="fab fa-youtube"></i></a></li>
-                <li><a href=""><i class="fab fa-instagram"></i></a></li>
-            </ul>
-            <hr class="footer-line">
-        </div>
-    </div>
-    <div class="footer-last-section">
-        <div class="container">
-            <p>Copyright 2018 &copy; educationpro.com <span> | </span> Theme designed and developed by <a href="https://labtheme.com">Lab Theme</a></p>
+        <div class="copyright">
+            <div class="row">
+                <div class="col-lg-8 col-md-7">
+                    <div class="copyright__text">
+                        <p>Copyright © <script>
+                                document.write(new Date().getFullYear());
+                            </script> All rights reserved | This template is made with <i class="fa fa-heart-o"
+                                                                                          aria-hidden="true"></i> by <a href="https://colorlib.com"
+                                                                                                                        target="_blank">Colorlib</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-5">
+                    <div class="copyright__widget">
+                        <a href="#">Terms of use</a>
+                        <a href="#">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </footer>
+<!-- Footer Section End -->
 
-<!-- <nav id="menu">
-    <ul>
-        <li><a href="#">HOME</a></li>
-        <li>
-            <span>COURSES</span>
-            <ul>
-                <li><a href="#/courses/child">Child</a></li>
-                <li><a href="#/courses/child">Child</a></li>
-                <li>
-                    <span>Child</span>
-                    <ul>
-                        <li><a href="#/courses/child/grandChild">Grand Child</a></li>
-                        <li><a href="#/courses/child/grandChild">Grand Child</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </li>
-        <li>
-            <a href="#">gallery</a>
-            <ul>
-                <li><a href="#">Child</a></li>
-                <li><a href="#">Child</a></li>
-                <li><a href="#">Child</a></li>
-            </ul>
-        </li>
-        <li>
-            <a href="#">news</a>
-            <ul>
-                <li><a href="#">Child</a></li>
-                <li><a href="#">Child</a></li>
-                <li><a href="#">Child</a></li>
-            </ul>
-        </li>
-        <li><a href="#">about</a></li>
-        <li><a href="#">contact</a></li>
-    </ul>
-</nav> -->
-
-</div>
-<script type="text/javascript" src="{{asset('assets')}}/js/jquery-3.3.1.min.js"></script>
-<script type="text/javascript" src="{{asset('assets')}}/js/lightbox.js"></script>
-<script type="text/javascript" src="{{asset('assets')}}/js/all.js"></script>
-<script type="text/javascript" src="{{asset('assets')}}/js/isotope.pkgd.min.js"></script>
-<script type="text/javascript" src="{{asset('assets')}}/js/owl.carousel.js"></script>
-<script type="text/javascript" src="{{asset('assets')}}/js/jquery.flexslider.js"></script>
-<script type="text/javascript" src="{{asset('assets')}}/js/jquery.rateyo.js"></script>
-<!-- <script type="text/javascript" src="js/jquery.mmenu.all.js"></script> -->
-<!-- <script type="text/javascript" src="js/jquery.meanmenu.min.js"></script> -->
-<script type="text/javascript" src="{{asset('assets')}}/js/custom.js"></script>
+<!-- Js Plugins -->
+<script src="{{asset('assets')}}/js/jquery-3.3.1.min.js"></script>
+<script src="{{asset('assets')}}/js/bootstrap.min.js"></script>
+<script src="{{asset('assets')}}/js/jquery.slicknav.js"></script>
+<script src="{{asset('assets')}}/js/owl.carousel.min.js"></script>
+<script src="{{asset('assets')}}/js/slick.min.js"></script>
+<script src="{{asset('assets')}}/js/main.js"></script>
 </body>
+
 </html>

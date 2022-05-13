@@ -1,35 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="zxx">
+
 <head>
-    <title>@yield('title')</title>
-    <meta name="viewport" content="width=device-width">
+    <meta charset="UTF-8">
+    <meta name="description" content="Staging Template">
+    <meta name="keywords" content="Staging, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="{{asset('assets')}}/css/all.css">
-    <link rel="stylesheet" type="text/css" href="{{asset('assets')}}/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="{{asset('assets')}}/css/lightbox.css">
-    <link rel="stylesheet" type="text/css" href="{{asset('assets')}}/css/flexslider.css">
-    <link rel="stylesheet" type="text/css" href="{{asset('assets')}}/css/owl.carousel.css">
-    <link rel="stylesheet" type="text/css" href="{{asset('assets')}}/css/owl.theme.default.css">
-    <link rel="stylesheet" type="text/css" href="{{asset('assets')}}/css/jquery.rateyo.css"/>
-    <!-- <link rel="stylesheet" type="text/css" href="css/jquery.mmenu.all.css" /> -->
-    <!-- <link rel="stylesheet" type="text/css" href="css/meanmenu.min.css"> -->
-    <link rel="stylesheet" type="text/css" href="{{asset('assets')}}/inner-page-style.css">
-    <link rel="stylesheet" type="text/css" href="{{asset('assets')}}/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> @yield('title')</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="{{asset('assets')}}/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="{{asset('assets')}}/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="{{asset('assets')}}/css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="{{asset('assets')}}/css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="{{asset('assets')}}/css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="{{asset('assets')}}/css/slick.css" type="text/css">
+    <link rel="stylesheet" href="{{asset('assets')}}/css/style.css" type="text/css">
     @yield('head')
 </head>
+
 <body>
-<div id="page" class="site" itemscope itemtype="http://schema.org/LocalBusiness">
+
+
 @include('home.header')
 <!-- burası sorun çıkartıyordu yorum satırına aldım sorun:: iki kez döngüye giriyordu  burada section slider ve show vardı sildim-->
+
 @section('slider')
     @include('home.slider')
 @show
 
-
 @section('sidebar')
     @include('home.sidebar')
 @show
+
 
 @yield('content')
 

@@ -1,37 +1,36 @@
-<div class="banner">
-    <div class="owl-four owl-carousel" itemprop="image">
-        <img src="{{asset('assets')}}/images/page-banner.jpg" alt="Image of Bannner">
-        <img src="{{asset('assets')}}/images/page-banner2.jpg" alt="Image of Bannner">
-        <img src="{{asset('assets')}}/images/page-banner3.jpg" alt="Image of Bannner">
+<!-- Hero Section Begin -->
+<section class="hero">
+    <div class="hero__slider owl-carousel">
+        @foreach($sliderdata as $rs)
+        <div class="hero__items set-bg" data-setbg="{{Storage::url($rs->image)}}">
+            <div class="hero__text">
+                <h2>Quality is not only our standard.</h2>
+                <a href="#" class="primary-btn">See Project</a>
+                <a href="#" class="more_btn">Discover more</a>
+                <div class="hero__social">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        @endforeach
+        <div class="hero__items set-bg" data-setbg="{{asset('assets')}}/img/hero/hero-1.jpg">
+            <div class="hero__text">
+                <h2>Quality is not only our standard.</h2>
+                <a href="#" class="primary-btn">See Project</a>
+                <a href="#" class="more_btn">Discover more</a>
+                <div class="hero__social">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="container" itemprop="description">
-        <h1>welcome to education pro</h1>
-        <h3>With our advance search feature you can now find the trips for you...</h3>
-    </div>
-    <div id="owl-four-nav" class="owl-nav"></div>
-</div>
-<!-- <div class="banner">
-    <div class="owl-five owl-carousel owl-theme">
-        <div class="item-video">
-            <iframe width="100%" height="450" src="https://www.youtube.com/embed/ENVW3uZ3a-4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-            </iframe>
-        </div>
-        <div class="item-video">
-            <iframe width="100%" height="450" src="https://www.youtube.com/embed/0bfk90rWV9U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div class="item-video">
-            <iframe width="100%" height="450" src="https://www.youtube.com/embed/ktvTqknDobU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div class="item-video">
-            <iframe width="100%" height="450" src="https://www.youtube.com/embed/ENVW3uZ3a-4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-            </iframe>
-        </div>
-        <div class="item-video">
-            <iframe width="100%" height="450" src="https://www.youtube.com/embed/0bfk90rWV9U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div class="item-video">
-            <iframe width="100%" height="450" src="https://www.youtube.com/embed/ktvTqknDobU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-  </div>
-</div> -->
-<!-- Banner Close -->
+    <div class="slide-num" id="snh-1"></div>
+    <div class="slider__progress"><span></span></div>
+</section>
+<!-- Hero Section End -->

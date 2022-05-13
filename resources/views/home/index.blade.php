@@ -3,440 +3,484 @@
 @section('title','Tour Activity')
 
 @section('content')
-    <div class="page-heading">
+    <!-- About Section Begin -->
+    <section class="about spad">
         <div class="container">
-            <h2>popular courses</h2>
-        </div>
-    </div>
-    <!-- Popular courses End -->
-    <div class="learn-courses">
-        <div class="container">
-            <div class="courses">
-                <div class="owl-one owl-carousel">
-                    <div class="box-wrap" itemprop="event" itemscope itemtype=" http://schema.org/Course">
-                        <div class="img-wrap" itemprop="image"><img src="{{asset('assets')}}/images/course-pic.jpg" alt="courses picture"></div>
-                        <a href="#" class="learn-desining-banner" itemprop="name">Learn Web Designing >>></a>
-                        <div class="box-body" itemprop="description">
-                            <p>Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum</p>
-                            <section itemprop="time">
-                                <p><span>Duration:</span> 4 Years</p>
-                                <p><span>Class Time:</span> 6am-12am / 11am-5pm</p>
-                                <p><span>Fee:</span> 4,00,000</p>
-                            </section>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about__text">
+                        <div class="section-title">
+                            <span>who are we</span>
+                            <h2>We propose and discuss design rules</h2>
                         </div>
-                    </div>
-
-                    <div class="box-wrap" itemprop="event" itemscope itemtype=" http://schema.org/Course">
-                        <div class="img-wrap"  itemprop="image"><img src="{{asset('assets')}}/images/course-pic.jpg" alt="courses picture"></div>
-                        <a href="#" class="learn-desining-banner" itemprop="name">Learn Web Designing >>></a>
-                        <div class="box-body" itemprop="description">
-                            <p>Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum</p>
-                            <section itemprop="time">
-                                <p><span>Duration:</span> 4 Years</p>
-                                <p><span>Class Time:</span> 6am-12am / 11am-5pm</p>
-                                <p><span>Fee:</span> 4,00,000</p>
-                            </section>
+                        <div class="about__para__text">
+                            <p>Metasurfaces are generally designed by placing scatterers in periodic or pseudo-periodic
+                                grids. We propose and discuss design rules for functional metasurfaces with randomly
+                                placed.</p>
+                            <p>Anisotropic elements that randomly sample. Quisque sit amet nisl ante. Fusce lacinia non
+                                tellus id gravida. Cras neque dolor, volutpat et hendrerit et.</p>
                         </div>
-                    </div>
-
-                    <div class="box-wrap" itemprop="event" itemscope itemtype=" http://schema.org/Course">
-                        <div class="img-wrap"  itemprop="image"><img src="{{asset('assets')}}/images/course-pic.jpg" alt="courses picture"></div>
-                        <a href="#" class="learn-desining-banner" itemprop="name">Learn Web Designing >>></a>
-                        <div class="box-body" itemprop="description">
-                            <p>Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum</p>
-                            <section itemprop="time">
-                                <p><span>Duration:</span> 4 Years</p>
-                                <p><span>Class Time:</span> 6am-12am / 11am-5pm</p>
-                                <p><span>Fee:</span> 4,00,000</p>
-                            </section>
-                        </div>
-                    </div>
-
-                    <div class="box-wrap" itemprop="event" itemscope itemtype=" http://schema.org/Course">
-                        <div class="img-wrap"  itemprop="image"><img src="{{asset('assets')}}/images/course-pic.jpg" alt="courses picture"></div>
-                        <a href="#" class="learn-desining-banner" itemprop="name">Learn Web Designing >>></a>
-                        <div class="box-body" itemprop="description">
-                            <p>Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum</p>
-                            <section itemprop="time">
-                                <p><span>Duration:</span> 4 Years</p>
-                                <p><span>Class Time:</span> 6am-12am / 11am-5pm</p>
-                                <p><span>Fee:</span> 4,00,000</p>
-                            </section>
-                        </div>
+                        <a href="#" class="primary-btn normal-btn">Learn More</a>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <!-- Learn courses End -->
-    <section class="whyUs-section">
-        <div class="container">
-            <div class="featured-points">
-                <ul>
-                    <li><i class="fas fa-book"></i> free books for students</li>
-                    <li><i class="fas fa-money-check-alt"></i> affordable fees</li>
-                    <li><i class="fas fa-chalkboard-teacher"></i> experienced teachers</li>
-                    <li> <i class="fas fa-book"></i> free books for students</li>
-                </ul>
-            </div>
-            <div class="whyus-wrap">
-                <h1>why us?</h1>
-                <p itemprop="description">Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsumLorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsumLorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsumLorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsumLorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsumLorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum</p>
-
-                <a href="#" class="read-more-btn">read more</a>
-            </div>
-        </div>
-    </section>
-    <!-- Closed WhyUs section -->
-    <section class="page-heading">
-        <div class="container">
-            <h2>gallery</h2>
-        </div>
-    </section>
-    <section class="gallery-images-section" itemprop="image" itemscope itemtype=" http://schema.org/ImageGallery">
-        <div class="gallery-img-wrap">
-            <a href="{{asset('assets')}}/images/gallery-img1.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-                <img src="{{asset('assets')}}/images/gallery-img1.jpg" alt="gallery-images">
-            </a>
-        </div>
-        <div class="gallery-img-wrap">
-            <a href="{{asset('assets')}}/images/gallery-img2.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-                <img src="{{asset('assets')}}/images/gallery-img2.jpg" alt="gallery-images">
-            </a>
-        </div>
-        <div class="gallery-img-wrap">
-            <a href="{{asset('assets')}}/images/gallery-img3.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-                <img src="{{asset('assets')}}/images/gallery-img3.jpg" alt="gallery-images">
-            </a>
-        </div>
-        <div class="gallery-img-wrap">
-            <a href="{{asset('assets')}}/images/gallery-img4.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-                <img src="{{asset('assets')}}/images/gallery-img4.jpg" alt="gallery-images">
-            </a>
-        </div>
-        <div class="gallery-img-wrap">
-            <a href="{{asset('assets')}}/images/gallery-img5.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-                <img src="{{asset('assets')}}/images/gallery-img5.jpg" alt="gallery-images">
-            </a>
-        </div>
-        <div class="gallery-img-wrap">
-            <a href="{{asset('assets')}}/images/gallery-img6.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-                <img src="{{asset('assets')}}/images/gallery-img6.jpg" alt="gallery-images">
-            </a>
-        </div>
-        <div class="gallery-img-wrap">
-            <a href="{{asset('assets')}}/images/gallery-img7.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-                <img src="{{asset('assets')}}/images/gallery-img7.jpg" alt="gallery-images">
-            </a>
-        </div>
-        <div class="gallery-img-wrap">
-            <a href="{{asset('assets')}}/images/gallery-img8.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-                <img src="{{asset('assets')}}/images/gallery-img8.jpg" alt="gallery-images">
-            </a>
-        </div>
-        <div class="gallery-img-wrap">
-            <a href="{{asset('assets')}}/images/gallery-img9.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-                <img src="{{asset('assets')}}/images/gallery-img9.jpg" alt="gallery-images">
-            </a>
-        </div>
-        <div class="gallery-img-wrap">
-            <a href="{{asset('assets')}}/images/gallery-img10.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-                <img src="{{asset('assets')}}/images/gallery-img10.jpg" alt="gallery-images">
-            </a>
-        </div>
-        <div class="gallery-img-wrap">
-            <a href="{{asset('assets')}}/images/gallery-img11.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-                <img src="{{asset('assets')}}/images/gallery-img11.jpg" alt="gallery-images">
-            </a>
-        </div>
-        <div class="gallery-img-wrap">
-            <a href="{{asset('assets')}}/images/gallery-img12.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-                <img src="{{asset('assets')}}/images/gallery-img12.jpg" alt="gallery-images">
-            </a>
-        </div>
-    </section>
-    <!-- End of gallery Images -->
-    <section class="page-heading">
-        <div class="container">
-            <h2>upcomming events</h2>
-        </div>
-    </section>
-    <section class="events-section" itemprop="event" itemscope itemtype=" http://schema.org/Event">
-        <div class="container">
-            <div class="event-wrap">
-                <div class="img-wrap" itemprop="image">
-                    <img src="{{asset('assets')}}/images/events.jpg" alt="event images">
-                </div>
-                <div class="details">
-                    <a href=""><h3 itemprop="name">Orientation Programme for new Students.</h3></a>
-                    <p itemprop="description">Orientation Programme for new sffs Students. Orientation Programme for new sffs Students. Orientation Programme for new sffs Students.</p>
-
-                    <h5 itemprop="startDate"><i class="far fa-clock"></i> Dec 30,2018 | 11am</h5>
-                    <h5 itemprop="location"><i class="fas fa-map-marker-alt"></i> Hotel Malla, Lainchaur</h5>
-                </div>
-            </div>
-
-            <div class="event-wrap">
-                <div class="img-wrap" itemprop="image">
-                    <img src="{{asset('assets')}}/images/events.jpg" alt="event images">
-                </div>
-                <div class="details">
-                    <a href=""><h3 itemprop="name">Orientation Programme for new Students.</h3></a>
-                    <p itemprop="description">Orientation Programme for new sffs Students. Orientation Programme for new sffs Students. Orientation Programme for new sffs Students.</p>
-
-                    <h5 itemprop="startDate"><i class="far fa-clock"></i> Dec 30,2018 | 11am</h5>
-                    <h5 itemprop="location"><i class="fas fa-map-marker-alt"></i> Hotel Malla, Lainchaur</h5>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End of Events section -->
-    <section class="what-other-say">
-        <!-- <div class="container">
-            <div class="wrap-others-say" itemprop="review" itemscope itemtype="http://schema.org/ReviewAction">
-                <h1>what other say about us</h1>
-                <div id="carousel" class="flexslider">
-                    <ul class="slides">
-                        <li class="img-wrap">
-                            <figure itemprop="image">
-                                <img src="images/review-big-img.jpg" alt="Person Image">
-                                <figcaption class="hidden">
-                                    <h3>Sagar Sapkota</h3>
-                                    <h4>UI Designer</h4>
-                                </figcaption>
-                            </figure>
-                        </li>
-                        <li class="img-wrap">
-                            <figure itemprop="image">
-                                <img src="images/review-big-img.jpg" alt="Person Image">
-                                <figcaption class="hidden">
-                                    <h3>Sagar Sapkota</h3>
-                                    <h4>UI Designer</h4>
-                                </figcaption>
-                            </figure>
-                        </li>
-                        <li class="img-wrap">
-                            <figure itemprop="image">
-                                <img src="images/review-big-img.jpg" alt="Person Image">
-                                <figcaption class="hidden">
-                                    <h3>Sagar Sapkota</h3>
-                                    <h4>UI Designer</h4>
-                                </figcaption>
-                            </figure>
-                        </li>
-                        <li class="img-wrap">
-                            <figure itemprop="image">
-                                <img src="images/review-big-img.jpg" alt="Person Image">
-                                <figcaption class="hidden">
-                                    <h3>Sagar Sapkota</h3>
-                                    <h4>UI Designer</h4>
-                                </figcaption>
-                            </figure>
-                        </li>
-                        <li class="img-wrap">
-                            <figure itemprop="image">
-                                <img src="images/review-big-img.jpg" alt="Person Image">
-                                <figcaption class="hidden">
-                                    <h3>Sagar Sapkota</h3>
-                                    <h4>UI Designer</h4>
-                                </figcaption>
-                            </figure>
-                        </li>
-                        <li class="img-wrap">
-                            <figure itemprop="image">
-                                <img src="images/review-big-img.jpg" alt="Person Image">
-                                <figcaption class="hidden">
-                                    <h3>Sagar Sapkota</h3>
-                                    <h4>UI Designer</h4>
-                                </figcaption>
-                            </figure>
-                        </li>
-                        <li class="img-wrap">
-                            <figure itemprop="image">
-                                <img src="images/review-big-img.jpg" alt="Person Image">
-                                <figcaption class="hidden">
-                                    <h3>Sagar Sapkota</h3>
-                                    <h4>UI Designer</h4>
-                                </figcaption>
-                            </figure>
-                        </li>
-                        <li class="img-wrap">
-                            <figure itemprop="image">
-                                <img src="images/review-big-img.jpg" alt="Person Image">
-                                <figcaption class="fig">
-                                    <h3 class="hidden">Sagar Sapkota</h3>
-                                    <h4 class="hidden">UI Designer</h4>
-                                </figcaption>
-                            </figure>
-                        </li>
-                    </ul>
-                </div>
-
-                <div id="slider" class="flexslider">
-                      <ul class="slides">
-                        <li>
-                            <div class="testimonial-holder" itemprop="description">
-                                <strong class="title">Amazing service and amazing team. Thank you!</strong>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tristique fer-<br/>mentum mauris, non tincidunt arcu venenatis vel. Nam et vehicula turpis. Ut nunc purus, mattis eu odio a, egestas facilisis nibh. Mauris magna diam, iaculis vitae sapien non, pharetra congue purus. Phasellus in odio purus.</p>
-                                <div class="rateYo"></div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="testimonial-holder" itemprop="description">
-                                <strong class="title">Very Satisfaied with their service</strong>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tristique fer-<br/>mentum mauris, non tincidunt arcu venenatis vel. Nam et vehicula turpis. Ut nunc purus, mattis eu odio a, egestas facilisis nibh. Mauris magna diam, iaculis vitae sapien non, pharetra congue purus. Phasellus in odio purus.</p>
-                                <div class="rateYo"></div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="testimonial-holder" itemprop="description">
-                                <strong class="title">Quick, efficient and meets your expectations</strong>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tristique fer-<br/>mentum mauris, non tincidunt arcu venenatis vel. Nam et vehicula turpis. Ut nunc purus, mattis eu odio a, egestas facilisis nibh. Mauris magna diam, iaculis vitae sapien non, pharetra congue purus. Phasellus in odio purus.</p>
-                                <div class="rateYo"></div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="testimonial-holder" itemprop="description">
-                                <strong class="title">The website was according our imagination</strong>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tristique fer-<br/>mentum mauris, non tincidunt arcu venenatis vel. Nam et vehicula turpis. Ut nunc purus, mattis eu odio a, egestas facilisis nibh. Mauris magna diam, iaculis vitae sapien non, pharetra congue purus. Phasellus in odio purus.</p>
-                                <div class="rateYo"></div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="testimonial-holder" itemprop="description">
-                                <strong class="title">Amazing service and amazing team. Thank you!</strong>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tristique fer-<br/>mentum mauris, non tincidunt arcu venenatis vel. Nam et vehicula turpis. Ut nunc purus, mattis eu odio a, egestas facilisis nibh. Mauris magna diam, iaculis vitae sapien non, pharetra congue purus. Phasellus in odio purus.</p>
-                                <div class="rateYo"></div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="testimonial-holder" itemprop="description">
-                                <strong class="title">Very Satisfaied with their service</strong>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tristique fer-<br/>mentum mauris, non tincidunt arcu venenatis vel. Nam et vehicula turpis. Ut nunc purus, mattis eu odio a, egestas facilisis nibh. Mauris magna diam, iaculis vitae sapien non, pharetra congue purus. Phasellus in odio purus.</p>
-                                <div class="rateYo"></div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="testimonial-holder" itemprop="description">
-                                <strong class="title">Quick, efficient and meets your expectations</strong>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tristique fer-<br/>mentum mauris, non tincidunt arcu venenatis vel. Nam et vehicula turpis. Ut nunc purus, mattis eu odio a, egestas facilisis nibh. Mauris magna diam, iaculis vitae sapien non, pharetra congue purus. Phasellus in odio purus.</p>
-                                <div class="rateYo"></div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="testimonial-holder" itemprop="description">
-                                <strong class="title">The website was according our imagination</strong>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tristique fer-<br/>mentum mauris, non tincidunt arcu venenatis vel. Nam et vehicula turpis. Ut nunc purus, mattis eu odio a, egestas facilisis nibh. Mauris magna diam, iaculis vitae sapien non, pharetra congue purus. Phasellus in odio purus.</p>
-                                <div class="rateYo"></div>
-                            </div>
-                        </li>
-                      </ul>
-                </div>
-            </div>
-        </div> -->
-        <div class="container">
-            <h4 class="article-subtitle">Get to Know</h4>
-            <h2 class="head">what our customer say</h2>
-            <div class="three owl-carousel owl-theme">
-                <div class="customer-item" itemscope itemtype="http://schema.org/Rating">
-                    <div class="border">
-                        <div class="customer">
-                            <figure>
-                                <img class="customer-img" src="{{asset('assets')}}/images/customer-img.jpg" alt="Person image">
-                                <figcaption>
-                                    <span itemprop="author">SAGAR KUMAR SAPKOTA</span>
-                                    <div class="rateYo" itemprop="ratingValue"></div>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="customer-review">
-                            <p itemprop="description">
-                                "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non"
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="customer-item" itemscope itemtype="http://schema.org/Rating">
-                    <div class="border">
-                        <div class="customer">
-                            <figure>
-                                <img class="customer-img" src="{{asset('assets')}}/images/customer-img.jpg" alt="Person image">
-                                <figcaption>
-                                    <span itemprop="author">SAGAR KUMAR SAPKOTA</span>
-                                    <div class="rateYo" itemprop="ratingValue"></div>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="customer-review">
-                            <p itemprop="description">
-                                "22222Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non"
-                            </p>
+                <div class="col-lg-6">
+                    <div class="about__pic">
+                        <div class="about__pic__inner">
+                            <img src="{{asset('assets')}}/img/about-pic.jpg" alt="">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- End of Others talk -->
-    <section class="page-heading">
-        <div class="container">
-            <h2>latest news</h2>
-        </div>
-    </section>
-    <section class="latest-news">
-        <div class="container" itemprop="event" itemscope itemtype=" http://schema.org/Event">
-            <div class="owl-two owl-carousel">
-                <div class="news-wrap" itemprop="event">
-                    <div class="news-img-wrap" itemprop="image">
-                        <img src="{{asset('assets')}}/images/latest-new-img.jpg" alt="Latest News Images">
-                    </div>
-                    <div class="news-detail" itemprop="description">
-                        <a href=""><h1>Orientation Programme for new Students.</h1></a>
-                        <h2 itemprop="startDate">By Admin | 20 Dec. 2018</h2>
+    <!-- About Section End -->
 
-                        <p>Orientation Programme for new sffs Students. Orientatin Programmes for new Students.. Orientatin Programmes for new Students</p>
+    <!-- Project Section Begin -->
+    <section class="project">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="section-title">
+                        <span>Our works</span>
+                        <h2>Latest projects</h2>
                     </div>
                 </div>
-
-                <div class="news-wrap" itemprop="event">
-                    <div class="news-img-wrap" itemprop="image">
-                        <img src="{{asset('assets')}}/images/latest-new-img.jpg" alt="Latest News Images">
+            </div>
+            <div class="row">
+                <div class="project__slider owl-carousel">
+                    <div class="col-lg-3">
+                        <div class="project__slider__item set-bg" data-setbg="{{asset('assets')}}/img/project/project-1.jpg">
+                            <div class="project__slider__item__hover">
+                                <span>interiors</span>
+                                <h5>Lower River Street Astoria</h5>
+                            </div>
+                        </div>
                     </div>
-                    <div class="news-detail" itemprop="description">
-                        <a href=""><h1>Orientation Programme for new Students.</h1></a>
-                        <h2 itemprop="startDate">By Admin | 20 Dec. 2018</h2>
-
-                        <p>Orientation Programme for new sffs Students. Orientatin Programmes for new Students.. Orientatin Programmes for new Students</p>
+                    <div class="col-lg-3">
+                        <div class="project__slider__item set-bg" data-setbg="{{asset('assets')}}/img/project/project-2.jpg">
+                            <div class="project__slider__item__hover">
+                                <span>interiors</span>
+                                <h5>Lower River Street Astoria</h5>
+                            </div>
+                        </div>
                     </div>
-                </div>
-
-                <div class="news-wrap" itemprop="event">
-                    <div class="news-img-wrap" itemprop="image">
-                        <img src="{{asset('assets')}}/images/latest-new-img.jpg" alt="Latest News Images">
+                    <div class="col-lg-3">
+                        <div class="project__slider__item set-bg" data-setbg="{{asset('assets')}}/img/project/project-3.jpg">
+                            <div class="project__slider__item__hover">
+                                <span>interiors</span>
+                                <h5>Lower River Street Astoria</h5>
+                            </div>
+                        </div>
                     </div>
-                    <div class="news-detail" itemprop="description">
-                        <a href=""><h1>Orientation Programme for new Students.</h1></a>
-                        <h2 itemprop="startDate">By Admin | 20 Dec. 2018</h2>
-
-                        <p>Orientation Programme for new sffs Students. Orientatin Programmes for new Students.. Orientatin Programmes for new Students</p>
+                    <div class="col-lg-3">
+                        <div class="project__slider__item set-bg" data-setbg="{{asset('assets')}}/img/project/project-4.jpg">
+                            <div class="project__slider__item__hover">
+                                <span>interiors</span>
+                                <h5>Lower River Street Astoria</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="project__slider__item set-bg" data-setbg="{{asset('assets')}}/img/project/project-2.jpg">
+                            <div class="project__slider__item__hover">
+                                <span>interiors</span>
+                                <h5>Lower River Street Astoria</h5>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Latest News CLosed -->
-    <section class="query-section">
+    <!-- Project Section End -->
+
+    <!-- Services Section Begin -->
+    <section class="services spad">
         <div class="container">
-            <p>Any Queries? Ask us a question at<a href="tel:+9779813639131"><i class="fas fa-phone"></i> +977 9813639131</a></p>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <span>Our specialization</span>
+                        <h2>What we do</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="services__item">
+                        <img src="{{asset('assets')}}/img/services/services-1.png" alt="">
+                        <h4>Interior Design</h4>
+                        <p>As you might expect of a company that began as a high-end interiors contractor, we pay strict
+                            attention.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="services__item">
+                        <img src="{{asset('assets')}}/img/services/services-2.png" alt="">
+                        <h4>Office Design</h4>
+                        <p>Our commitment to exceptional quality has never wavered. To day ranks as one of the most
+                            highly-regarded construction.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="services__item">
+                        <img src="{{asset('assets')}}/img/services/services-3.png" alt="">
+                        <h4>Home Design</h4>
+                        <p>Interdisciplinary architectural studio with cultural, residential and commercial projects
+                            built worldwide.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="services__item">
+                        <img src="{{asset('assets')}}/img/services/services-4.png" alt="">
+                        <h4>Design drawing</h4>
+                        <p>Creating architectural and creative solutions to help people realize their vision and make
+                            them a reality.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="counter__content">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="counter__item">
+                            <div class="counter__item__number">
+                                <h2 class="count">85</h2>
+                            </div>
+                            <div class="counter__item__text">
+                                <h5>Projects<br /> Completed</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="counter__item">
+                            <div class="counter__item__number">
+                                <h2 class="count">127</h2>
+                            </div>
+                            <div class="counter__item__text">
+                                <h5>Happy<br /> Clients</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="counter__item">
+                            <div class="counter__item__number">
+                                <h2 class="count">36</h2>
+                            </div>
+                            <div class="counter__item__text">
+                                <h5>Awards<br /> Received</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="counter__item">
+                            <div class="counter__item__number">
+                                <h2 class="count">74</h2>
+                            </div>
+                            <div class="counter__item__text">
+                                <h5>Cups Of<br /> Coffee</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    <!-- End of Query Section -->
+    <!-- Services Section End -->
+
+    <!-- Testimonial Section Begin -->
+    <section class="testimonial spad set-bg" data-setbg="{{asset('assets')}}/img/testimonial/testimonial-bg.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="section-title">
+                        <span>Testimonials</span>
+                        <h2>What your clients say</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="testimonial__carousel">
+                        <div class="testimonial__item">
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-xl-9 col-lg-10">
+                                    <p>“1. Fast and accurate at solving mental math problems involving addition,
+                                        subtraction, multiplication, division and percentages but without high-level
+                                        skills that might be required in jobs requiring complex calculation and
+                                        analysis.”</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial__item">
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-xl-9 col-lg-10">
+                                    <p>“2. Fast and accurate at solving mental math problems involving addition,
+                                        subtraction, multiplication, division and percentages but without high-level
+                                        skills that might be required in jobs requiring complex calculation and
+                                        analysis.”</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial__item">
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-xl-9 col-lg-10">
+                                    <p>“3. Fast and accurate at solving mental math problems involving addition,
+                                        subtraction, multiplication, division and percentages but without high-level
+                                        skills that might be required in jobs requiring complex calculation and
+                                        analysis.”</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial__item">
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-xl-9 col-lg-10">
+                                    <p>“4. Fast and accurate at solving mental math problems involving addition,
+                                        subtraction, multiplication, division and percentages but without high-level
+                                        skills that might be required in jobs requiring complex calculation and
+                                        analysis.”</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial__item">
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-lg-9">
+                                    <p>“5. Fast and accurate at solving mental math problems involving addition,
+                                        subtraction, multiplication, division and percentages but without high-level
+                                        skills that might be required in jobs requiring complex calculation and
+                                        analysis.”</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-xl-6 col-lg-8 col-md-7 col-sm-10 ">
+                    <div class="testimonial__client">
+                        <div class="testimonial__client__item add">
+                            <div class="testimonial__client__pic">
+                                <img src="{{asset('assets')}}/img/testimonial/ta-1.png" alt="">
+                            </div>
+                            <div class="testimonial__client__text">
+                                <h5>Renee Calhoun</h5>
+                                <span>CEO Woolley</span>
+                            </div>
+                        </div>
+                        <div class="testimonial__client__item">
+                            <div class="testimonial__client__pic">
+                                <img src="{{asset('assets')}}/img/testimonial/ta-2.png" alt="">
+                            </div>
+                            <div class="testimonial__client__text">
+                                <h5>Renee Calhoun</h5>
+                                <span>CEO Woolley</span>
+                            </div>
+                        </div>
+                        <div class="testimonial__client__item">
+                            <div class="testimonial__client__pic">
+                                <img src="{{asset('assets')}}/img/testimonial/ta-3.png" alt="">
+                            </div>
+                            <div class="testimonial__client__text">
+                                <h5>Renee Calhoun</h5>
+                                <span>CEO Woolley</span>
+                            </div>
+                        </div>
+                        <div class="testimonial__client__item">
+                            <div class="testimonial__client__pic">
+                                <img src="{{asset('assets')}}/img/testimonial/ta-4.png" alt="">
+                            </div>
+                            <div class="testimonial__client__text">
+                                <h5>Renee Calhoun</h5>
+                                <span>CEO Woolley</span>
+                            </div>
+                        </div>
+                        <div class="testimonial__client__item">
+                            <div class="testimonial__client__pic">
+                                <img src="{{asset('assets')}}/img/testimonial/ta-5.png" alt="">
+                            </div>
+                            <div class="testimonial__client__text">
+                                <h5>Renee Calhoun</h5>
+                                <span>CEO Woolley</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="logo__carousel owl-carousel">
+                        <div class="logo__carousel__item">
+                            <a href="#"><img src="{{asset('assets')}}/img/logo/logo-1.png" alt=""></a>
+                        </div>
+                        <div class="logo__carousel__item">
+                            <a href="#"><img src="{{asset('assets')}}/img/logo/logo-2.png" alt=""></a>
+                        </div>
+                        <div class="logo__carousel__item">
+                            <a href="#"><img src="{{asset('assets')}}/img/logo/logo-3.png" alt=""></a>
+                        </div>
+                        <div class="logo__carousel__item">
+                            <a href="#"><img src="{{asset('assets')}}/img/logo/logo-4.png" alt=""></a>
+                        </div>
+                        <div class="logo__carousel__item">
+                            <a href="#"><img src="{{asset('assets')}}/img/logo/logo-5.png" alt=""></a>
+                        </div>
+                        <div class="logo__carousel__item">
+                            <a href="#"><img src="{{asset('assets')}}/img/logo/logo-3.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonial Section End -->
+
+    <!-- Team Section Begin -->
+    <section class="team spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 col-md-8 col-sm-6">
+                    <div class="section-title">
+                        <span>Our Team</span>
+                        <h2>Meet our team</h2>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="team__btn">
+                        <a href="#" class="primary-btn normal-btn">View All</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="team__item set-bg" data-setbg="{{asset('assets')}}/img/team/team-1.jpg">
+                        <div class="team__text">
+                            <div class="team__title">
+                                <h5>Dolores Webster</h5>
+                                <span>CEO & Founder</span>
+                            </div>
+                            <p>Vestibulum dapibus odio quam, sit amet hendrerit dui ultricies consectetur. Ut viverra
+                                porta leo, non tincidunt mauris condimentum eget. Vivamus non turpis elit. Aenean
+                                ultricies nisl sit amet.</p>
+                            <div class="team__social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="team__item set-bg" data-setbg="{{asset('assets')}}/img/team/team-2.jpg">
+                        <div class="team__text">
+                            <div class="team__title">
+                                <h5>Dana Vaughn</h5>
+                                <span>Architect</span>
+                            </div>
+                            <p>Vestibulum dapibus odio quam, sit amet hendrerit dui ultricies consectetur. Ut viverra
+                                porta leo, non tincidunt mauris condimentum eget. Vivamus non turpis elit. Aenean
+                                ultricies nisl sit amet.</p>
+                            <div class="team__social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="team__item set-bg" data-setbg="{{asset('assets')}}/img/team/team-3.jpg">
+                        <div class="team__text">
+                            <div class="team__title">
+                                <h5>Jonathan Mcdaniel</h5>
+                                <span>Architect</span>
+                            </div>
+                            <p>Vestibulum dapibus odio quam, sit amet hendrerit dui ultricies consectetur. Ut viverra
+                                porta leo, non tincidunt mauris condimentum eget. Vivamus non turpis elit. Aenean
+                                ultricies nisl sit amet.</p>
+                            <div class="team__social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Team Section End -->
+
+    <!-- Call To Action Section Begin -->
+    <section class="callto spad set-bg" data-setbg="{{asset('assets')}}/img/call-bg.jpg">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <div class="callto__text">
+                        <span>Why choose us?</span>
+                        <h2>Our Ability To Deliver Outstanding Results For Our Clients Starts With Our Team Of Smart.
+                        </h2>
+                        <a href="#" class="primary-btn">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Call To Action Section End -->
+
+    <!-- Latest Section Begin -->
+    <section class="latest spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 col-md-8 col-sm-6">
+                    <div class="section-title">
+                        <span>Latest News</span>
+                        <h2>From our blog</h2>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="latest__btn">
+                        <a href="#" class="primary-btn normal-btn">View All</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="latest__item">
+                        <div class="latest__item__pic">
+                            <img src="{{asset('assets')}}/img/blog/latest-1.jpg" alt="">
+                        </div>
+                        <div class="latest__item__text">
+                            <span>Architecture</span>
+                            <h4>Target and Amazon Shopping List for Home Stagers</h4>
+                            <a href="#">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="latest__item">
+                        <div class="latest__item__pic">
+                            <img src="{{asset('assets')}}/img/blog/latest-2.jpg" alt="">
+                        </div>
+                        <div class="latest__item__text">
+                            <span>Interior</span>
+                            <h4>6 Ideas for Team Building and Employee Appreciation for Home Stagers</h4>
+                            <a href="#">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="latest__item">
+                        <div class="latest__item__pic">
+                            <img src="{{asset('assets')}}/img/blog/latest-3.jpg" alt="">
+                        </div>
+                        <div class="latest__item__text">
+                            <span>Planning</span>
+                            <h4>How to Find the Best Price Structure for Your Home Staging Services</h4>
+                            <a href="#">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Latest Section End -->
 @endsection
