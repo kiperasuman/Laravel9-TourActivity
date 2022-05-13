@@ -1,6 +1,6 @@
 @extends('layouts.frontbase')
 
-@section('title','Tour|Activity')
+@section('title','Tour | Activity')
 
 @section('slider')
     @include('home.slider')
@@ -46,52 +46,21 @@
                 <div class="col-lg-12 text-center">
                     <div class="section-title">
                         <span>Our works</span>
-                        <h2>Latest projects</h2>
+                        <h2>Latest Tours</h2>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="project__slider owl-carousel">
+                    @foreach($contentdatalist as $rs)
                     <div class="col-lg-3">
-                        <div class="project__slider__item set-bg" data-setbg="{{asset('assets')}}/img/project/project-1.jpg">
+                        <div class="project__slider__item set-bg" data-setbg="{{Storage::url($rs->image)}}">
                             <div class="project__slider__item__hover">
-                                <span>interiors</span>
-                                <h5>Lower River Street Astoria</h5>
+                               <h5><span>{{$rs->title}}</span></h5>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
-                        <div class="project__slider__item set-bg" data-setbg="{{asset('assets')}}/img/project/project-2.jpg">
-                            <div class="project__slider__item__hover">
-                                <span>interiors</span>
-                                <h5>Lower River Street Astoria</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="project__slider__item set-bg" data-setbg="{{asset('assets')}}/img/project/project-3.jpg">
-                            <div class="project__slider__item__hover">
-                                <span>interiors</span>
-                                <h5>Lower River Street Astoria</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="project__slider__item set-bg" data-setbg="{{asset('assets')}}/img/project/project-4.jpg">
-                            <div class="project__slider__item__hover">
-                                <span>interiors</span>
-                                <h5>Lower River Street Astoria</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="project__slider__item set-bg" data-setbg="{{asset('assets')}}/img/project/project-2.jpg">
-                            <div class="project__slider__item__hover">
-                                <span>interiors</span>
-                                <h5>Lower River Street Astoria</h5>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </div>
