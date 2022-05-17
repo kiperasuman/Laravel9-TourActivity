@@ -2,30 +2,68 @@
 
 @section('title',$data->title)
 
-
 @section('content')
 
-    <div class="content"><div class="ic">More Website Templates @ TemplateMonster.com - February 10, 2014!</div>
-       <br> <div class="container_12"> </br>
-            <div class="grid_7">
-                <div class="blog">
-                    <time datetime="2014-10-01">15<span>Feb</span></time>
-                    <div class="extra_wrapper">
-                        <div class="text1 col1">{{$data->title}}</div>
-                        {!! $data->description !!}
+    <!-- Breadcrumb Section Begin -->
+    <div class="breadcrumb-option spad set-bg" data-setbg="{{asset('assets')}}/img/breadcrumb-bg.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="breadcrumb__text">
+                        <h2>Projects Details</h2>
+                        <div class="breadcrumb__links">
+                            <a href="./index.html">Home</a>
+                            <a href="./project.html">Project</a>
+                            <span>{{$data->title}}</span>
+                        </div>
                     </div>
-                    <div class="clear"></div>
-                    <img src="{{Storage::url($data->image)}}" alt="" class="img_inner">
-                    <div class="slideshow-container">
-                        @foreach($images as $rs)
-                              <img src="{{Storage::url($rs->image)}}" class="img_inner">
-                        @endforeach
-                    </div>
-                    <p>{!! $data->detail !!}</p>
-                    <br>
                 </div>
             </div>
-         </div>
+        </div>
     </div>
+    <!-- Breadcrumb Section End -->
 
+   <!-- Project Details Section Begin -->
+   <section class="project-details spad">
+       <div class="container">
+           <div class="row">
+               <div class="col-lg-8">
+                   <div class="row">
+                       <div class="col-lg-6 col-md-6 col-sm-6">
+                           <img src="{{Storage::url($data->image)}}" alt="">
+                       </div>
+                       @foreach($images as $rs)
+                       <div class="col-lg-6 col-md-6 col-sm-6">
+                           <img src="{{Storage::url($rs->image)}}" alt="">
+                       </div>
+                       @endforeach
+                   </div>
+               </div>
+               <div class="col-lg-4">
+                   <div class="project__sidebar">
+                       <div class="project__sidebar__about">
+                           <h2>{{$data->title}}</h2>
+                           <p>{!! $data->description !!}</p>
+                           <p>{!!$data->detail!!}</p>
+                       </div>
+                       <div class="product__details__widget">
+                           <div class="product__details__widget__item">
+                               <span>Clients:</span>
+                               <h4>John Smith</h4>
+                           </div>
+                           <div class="product__details__widget__item">
+                               <span>Location:</span>
+                               <p>{{$data->location}}</p>
+                           </div>
+                           <div class="product__details__widget__item">
+                               <span>Activity Date:</span>
+                               <p>{{$data->date}}</p>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
+   <!-- Project Details Section End -->
 @endsection
