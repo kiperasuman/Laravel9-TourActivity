@@ -23,24 +23,25 @@
         <div class="row">
             <div class="col-lg-3">
                 <div class="header__logo">
-                    <a href="#"><img src="{{asset('assets')}}/img/logo.png" alt=""></a>
+                    <a href="{{route('home')}}"><img src="{{asset('assets')}}/img/logo.png" alt=""></a>
                 </div>
             </div>
-
+           @php
+               $mainCategories=\App\Http\Controllers\HomeController::maincategorylist()
+           @endphp
             <div class="col-lg-6">
                 <nav class="header__menu mobile-menu">
                     <ul>
-                        <li class="active"><a href="./index.html">Home</a></li>
-                        <li><a href="./projects.html">Projects</a></li>
-                        <li><a href="./about.html">About</a></li>
-                        <li><a href="#">Pages</a>
+                        <li class="active"><a href="{{route('home')}}">Home</a></li>
+                        <li><a href="./projects.html">Pages</a></li>
+                        <li><a href="#">Categories</a>
                             <ul class="dropdown">
-                                <li><a href="./Project-details.html">Project Details</a></li>
-                                <li><a href="./about.html">About</a></li>
-                                <li><a href="./services.html">Services</a></li>
-                                <li><a href="./blog-details.html">Blog Details</a></li>
+                                @foreach($mainCategories as $rs)
+                                <li><a href="{{route('content',['id'=>$rs->id])}}">{{$rs->title}}</a></li>
+                                @endforeach
                             </ul>
                         </li>
+                        <li><a href="./about.html">About</a></li>
                         <li><a href="./blog.html">Blog</a></li>
                         <li><a href="./contact.html">Contact</a></li>
                     </ul>

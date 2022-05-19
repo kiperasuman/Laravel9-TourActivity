@@ -43,7 +43,9 @@ Route::get('/save',[HomeController::class,'save'])->name('save');
 
 // content ten verileri başka sayfaya getirirken yaptık yani -content details page-
 Route::get('/content/{id}',[HomeController::class,'content'])->name('content');
+// bunu kullanamıyorum çünkü benim alt kategorileri açacak herhangi bir classım yok
 
+Route::get('/categoryproducts/{id}/{slug}',[HomeController::class,'categoryproducts'])->name('categoryproducts');
 
 /*
 Route::get('/', function () {
