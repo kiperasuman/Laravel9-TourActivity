@@ -33,7 +33,11 @@
                 <nav class="header__menu mobile-menu">
                     <ul>
                         <li class="active"><a href="{{route('home')}}">Home</a></li>
-                        <li><a href="./projects.html">Pages</a></li>
+                        <li><a href="./projects.html">Projects</a>
+                            <ul class="dropdown">
+                                <li><a href="./Project-details.html">Project Details </a></li>
+                            </ul>
+                        </li>
                         <li><a href="#">Categories</a>
                             <ul class="dropdown">
                                 @foreach($mainCategories as $rs)
