@@ -59,7 +59,7 @@
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="/admin/settings">
+            <a class="nav-link" href="/admin/setting">
                 <i class="icon-cog menu-icon"></i>
                 <span class="menu-title">Settings</span>
             </a>
