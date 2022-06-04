@@ -190,7 +190,8 @@
                                                 <div class="form-group">
                                                     <label>References</label>
                                                     <textarea id="references"
-                                                              name="references">{{$data->references}}</textarea>
+                                                              name="references">{{$data->references}}
+                                                    </textarea>
                                                 </div>
                                             </div>
                                         </div>

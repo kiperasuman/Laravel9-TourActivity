@@ -20,8 +20,8 @@
                 <div class="col-lg-12 grid-margin stretch-card">
 
                     <div class="card">
-                        <div class="card-body">
-                                <table class="table table-bordered">
+                        <div class="card-body" >
+                                <table class="table table-bordered" >
                                     <thead>
                                     <tr>
                                         <th style="width: 10px">Id</th>
