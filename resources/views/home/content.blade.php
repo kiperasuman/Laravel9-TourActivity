@@ -12,7 +12,7 @@
                     <div class="breadcrumb__text">
                         <h2>Projects Details</h2>
                         <div class="breadcrumb__links">
-                            <a href="./index.html">Home</a>
+                            <a href="{{route('home')}}">Home</a>
                             <a href="./project.html">Project</a>
                             <span>{{$data->title}}</span>
                         </div>
@@ -30,7 +30,7 @@
 
                 @foreach($categoryList as $test)
                     <div class="col-md-4">
-                        <a href="#">
+                        <a href="{{route('contentdetails',['id'=>$test->id])}}">
                             <h4 class="text-center">{{$test->title}}</h4>
                             <img src="{{Storage::url($test->image)}}" height="300">
                         </a>

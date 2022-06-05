@@ -44,67 +44,75 @@
                                         </h2>
                                         <div id="collapseOne" class="accordion-collapse collapse show"
                                              aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                            <div class="tab-pane fade show active " id="custom-tabs-one-general" role="tabpanel"
+                                            <div class="tab-pane fade show active " id="custom-tabs-one-general"
+                                                 role="tabpanel"
                                                  aria-labelledby="custom-tabs-one-general-tab">
                                                 <div class="accordion-body">
-                                                <input type="hidden" id="id" name="id" value="{{$data->id}}"
-                                                       class="form-control">
-                                                <div class="form-group">
-                                                    <label>Title</label>
-                                                    <input type="text" id="title" name="title" value="{{$data->title}}"
+                                                    <input type="hidden" id="id" name="id" value="{{$data->id}}"
                                                            class="form-control">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label>Keywords</label>
-                                                    <input type="text" id="keywords" name="keywords" value="{{$data->keywords}}"
-                                                           class="form-control">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label>Description</label>
-                                                    <input type="text" id="description" name="description"
-                                                           value="{{$data->description}}" class="form-control">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label>Company</label>
-                                                    <input type="text" id="company" name="company" value="{{$data->company}}"
-                                                           class="form-control">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label>Address</label>
-                                                    <input type="text" id="address" name="address" value="{{$data->address}}">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label>Phone</label>
-                                                    <input type="text" id="phone" name="phone" value="{{$data->phone}}"
-                                                           class="form-control">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label>Email</label>
-                                                    <input type="text" id="email" name="email" value="{{$data->email}}"
-                                                           class="form-control">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label>Status</label>
-                                                    <select class="form-control select2" name="status">
-                                                        <option selected="selected">{{$data->status}}</option>
-                                                        <option>True</option>
-                                                        <option>False</option>
-                                                    </select>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="exampleInputFile">Icon</label>
-                                                    <div class="input-group col-xs-12">
-                                                        <div class="custom-file">
-                                                            <label class="form-control custom-file-label"
-                                                                   for="exampleInputFile"> Choose Icon</label>
-                                                            <input type="file" name="icon" class="custom-file-input"
-                                                                   value="{{$data->image}}">
+                                                    <div class="form-group">
+                                                        <label>Title</label>
+                                                        <input type="text" id="title" name="title"
+                                                               value="{{$data->title}}"
+                                                               class="form-control">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Keywords</label>
+                                                        <input type="text" id="keywords" name="keywords"
+                                                               value="{{$data->keywords}}"
+                                                               class="form-control">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Description</label>
+                                                        <input type="text" id="description" name="description"
+                                                               value="{{$data->description}}" class="form-control">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Company</label>
+                                                        <input type="text" id="company" name="company"
+                                                               value="{{$data->company}}"
+                                                               class="form-control">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Address</label>
+                                                        <input type="text" id="address" name="address"
+                                                               value="{{$data->address}}">
+
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Phone</label>
+                                                        <input type="text" id="phone" name="phone"
+                                                               value="{{$data->phone}}"
+                                                               class="form-control">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Email</label>
+                                                        <input type="text" id="email" name="email"
+                                                               value="{{$data->email}}"
+                                                               class="form-control">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Status</label>
+                                                        <select class="form-control select2" name="status">
+                                                            <option selected="selected">{{$data->status}}</option>
+                                                            <option>True</option>
+                                                            <option>False</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="exampleInputFile">Icon</label>
+                                                        <div class="input-group col-xs-12">
+                                                            <div class="custom-file">
+                                                                <label class="form-control custom-file-label"
+                                                                       for="exampleInputFile"> Choose Icon</label>
+                                                                <input type="file" name="icon" class="custom-file-input"
+                                                                       value="{{$data->image}}">
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
                                     </div>
                                     <div class="accordion-item">
                                         <h2 class="accordion-header" id="headingTwo">
@@ -122,26 +130,27 @@
                                         <div id="collapseTwo" class="accordion-collapse collapse"
                                              aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                             <div class="accordion-body">
-                                            <div class="form-group">
-                                                <label>Smtp Server</label>
-                                                <input type="text" name="smtpserver" value="{{$data->smtpserver}}"
-                                                       class="form-control">
-                                            </div>
-                                            <div class="form-group">
-                                                <label>Smtp Email</label>
-                                                <input type="text" name="smtpemail" value="{{$data->smtpemail}}"
-                                                       class="form-control">
-                                            </div>
-                                            <div class="form-group">
-                                                <label>Smtppassword</label>
-                                                <input type="password" name="smtppassword" value="{{$data->smtppassword}}"
-                                                       class="form-control">
-                                            </div>
-                                            <div class="form-group">
-                                                <label>Smtpport</label>
-                                                <input type="number" name="smtpport" value="{{$data->smtpport}}"
-                                                       class="form-control">
-                                            </div>
+                                                <div class="form-group">
+                                                    <label>Smtp Server</label>
+                                                    <input type="text" name="smtpserver" value="{{$data->smtpserver}}"
+                                                           class="form-control">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Smtp Email</label>
+                                                    <input type="text" name="smtpemail" value="{{$data->smtpemail}}"
+                                                           class="form-control">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Smtppassword</label>
+                                                    <input type="password" name="smtppassword"
+                                                           value="{{$data->smtppassword}}"
+                                                           class="form-control">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Smtpport</label>
+                                                    <input type="number" name="smtpport" value="{{$data->smtpport}}"
+                                                           class="form-control">
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -162,33 +171,33 @@
                                         <div id="collapseThree" class="accordion-collapse collapse"
                                              aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                             <div class="accordion-body">
-                                            <div class="form-group">
-                                                <label>Fax</label>
-                                                <input type="text" name="fax" value="{{$data->fax}}"
-                                                       class="form-control">
-                                            </div>
+                                                <div class="form-group">
+                                                    <label>Fax</label>
+                                                    <input type="text" name="fax" value="{{$data->fax}}"
+                                                           class="form-control">
+                                                </div>
 
-                                            <div class="form-group">
-                                                <label>Facebook</label>
-                                                <input type="text" name="facebook" value="{{$data->facebook}}"
-                                                       class="form-control">
+                                                <div class="form-group">
+                                                    <label>Facebook</label>
+                                                    <input type="text" name="facebook" value="{{$data->facebook}}"
+                                                           class="form-control">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Instagram</label>
+                                                    <input type="text" name="instagram" value="{{$data->instagram}}"
+                                                           class="form-control">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Twitter</label>
+                                                    <input type="text" name="twitter" value="{{$data->twitter}}"
+                                                           class="form-control">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Youtube</label>
+                                                    <input type="text" name="youtube" value="{{$data->youtube}}"
+                                                           class="form-control">
+                                                </div>
                                             </div>
-                                            <div class="form-group">
-                                                <label>Instagram</label>
-                                                <input type="text" name="instagram" value="{{$data->instagram}}"
-                                                       class="form-control">
-                                            </div>
-                                            <div class="form-group">
-                                                <label>Twitter</label>
-                                                <input type="text" name="twitter" value="{{$data->twitter}}"
-                                                       class="form-control">
-                                            </div>
-                                            <div class="form-group">
-                                                <label>Youtube</label>
-                                                <input type="text" name="youtube" value="{{$data->youtube}}"
-                                                       class="form-control">
-                                            </div>
-                                        </div>
                                         </div>
                                     </div>
                                     <div class="accordion-item">
@@ -208,12 +217,22 @@
                                         <div id="collapseFour" class="accordion-collapse collapse"
                                              aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                                             <div class="accordion-body">
-                                            <div class="form-group">
-                                                <label>About Us</label>
-                                                <textarea id="aboutus" name="aboutus">{{$data->aboutus}}</textarea>
-                                            </div>
+                                                <div class="form-group">
+                                                    <label>About Us</label>
+                                                    <textarea id="aboutus" name="aboutus">{{$data->aboutus}}</textarea>
+                                                </div>
                                             </div>
                                         </div>
+                                        <script>
+                                            ClassicEditor
+                                                .create(document.querySelector('#aboutus'))
+                                                .then(editor => {
+                                                    console.log(editor);
+                                                })
+                                                .catch(error => {
+                                                    console.error(error);
+                                                });
+                                        </script>
                                     </div>
                                     <div class="accordion-item">
                                         <h2 class="accordion-header" id="headingFive">
@@ -238,6 +257,16 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        <script>
+                                            ClassicEditor
+                                                .create(document.querySelector('#contact'))
+                                                .then(editor => {
+                                                    console.log(editor);
+                                                })
+                                                .catch(error => {
+                                                    console.error(error);
+                                                });
+                                        </script>
                                     </div>
                                     <div class="accordion-item">
                                         <h2 class="accordion-header" id="headingSix">
@@ -262,7 +291,20 @@
                                                     </textarea>
                                             </div>
                                         </div>
+                                        <script>
+                                            ClassicEditor
+                                                .create(document.querySelector('#references'))
+                                                .then(editor => {
+                                                    console.log(editor);
+                                                })
+                                                .catch(error => {
+                                                    console.error(error);
+                                                });
+                                        </script>
                                     </div>
+                                    <br>
+                                    <button type="submit" class="btn btn-primary">Update Setting</button>
+                                    </br>
                                 </div>
                             </div>
                         </div>
@@ -270,21 +312,10 @@
                 </section>
             </form>
         </div>
-
-        @endsection
-        @section('foot')
-            <script>
-                ClassicEditor
-                    .create(document.querySelector('#detail'))
-                    .then(editor => {
-                        console.log(editor);
-                    })
-                    .catch(error => {
-                        console.error(error);
-                    });
-            </script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-                             integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-                             crossorigin="anonymous"></script>
-
+@endsection
+@section('foot')
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+           integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+           crossorigin="anonymous">
+</script>
 @endsection

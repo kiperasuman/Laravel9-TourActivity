@@ -48,7 +48,7 @@ Route::get('/content/{id}', [HomeController::class, 'content'])->name('content')
 Route::get('/contentdetails/{id}', [HomeController::class, 'contentdetails'])->name('contentdetails');
 // bunu kullanamıyorum çünkü benim alt kategorileri açacak herhangi bir classım yok
 
-Route::get('/categoryproducts/{id}/{slug}', [HomeController::class, 'categoryproducts'])->name('categoryproducts');
+//Route::get('/categoryproducts/{id}/{slug}', [HomeController::class, 'categoryproducts'])->name('categoryproducts');
 
 /*
 Route::get('/', function () {
