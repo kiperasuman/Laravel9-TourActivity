@@ -45,9 +45,10 @@
                                 @endforeach
                             </ul>
                         </li>
-                        <li><a href="./about.html">About</a></li>
                         <li><a href="./blog.html">Blog</a></li>
-                        <li><a href="./contact.html">Contact</a></li>
+                        <li><a href="{{route('about')}}">About</a></li>
+                        <li><a href="{{route('references')}}">References</a></li>
+                        <li><a href="{{route('contact')}}">Contact</a></li>
                     </ul>
                 </nav>
             </div>

@@ -27,9 +27,11 @@ Route::get('/welcome', function () {
     return view("welcome");
 });
 
-// 3- Call Controller Function
-
+// *********  HOME PAGES ROUTES  ********//
 Route::get("/", [HomeController::class, 'index'])->name('home');
+Route::get("/about", [HomeController::class, 'about'])->name('about');
+Route::get("/references", [HomeController::class, 'references'])->name('references');
+Route::get("/contact", [HomeController::class, 'contact'])->name('contact');
 
 // 4- Route -> Controller -> View
 Route::get("/test1", [HomeController::class, 'test'])->name('test');
@@ -49,6 +51,7 @@ Route::get('/contentdetails/{id}', [HomeController::class, 'contentdetails'])->n
 // bunu kullanamıyorum çünkü benim alt kategorileri açacak herhangi bir classım yok
 
 //Route::get('/categoryproducts/{id}/{slug}', [HomeController::class, 'categoryproducts'])->name('categoryproducts');
+
 
 /*
 Route::get('/', function () {
