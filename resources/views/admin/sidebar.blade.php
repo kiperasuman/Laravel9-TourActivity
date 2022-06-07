@@ -39,7 +39,7 @@
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="/admin/message">
+            <a class="nav-link" href="{{route('admin.message.index')}}">
                 <i class="icon-mail menu-icon"></i>
                 <span class="menu-title"> Messages </span>
             </a>

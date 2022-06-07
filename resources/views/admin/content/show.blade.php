@@ -1,6 +1,6 @@
 @extends('layouts.adminbase')
 
-@section('title','Show Content')
+@section('title','Show Content: '.$data->title)
 
 @section('content')
     <!-- partial -->

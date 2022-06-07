@@ -1,6 +1,6 @@
 @extends('layouts.frontbase')
 
-@section('title','About Us | '. $setting->title)
+@section('title','Contact | '. $setting->title)
 @section('description',$setting->description)
 @section('keywords',$setting->keywords)
 @section('icon',Storage::url($setting->icon))
@@ -13,10 +13,10 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="breadcrumb__text">
-                        <h2>About Us</h2>
+                        <h2>Contact</h2>
                         <div class="breadcrumb__links">
                             <a href="{{route('home')}}">Home</a>
-                            <span>About Us</span>
+                            <span>Contact</span>
                         </div>
                     </div>
                 </div>
@@ -93,16 +93,24 @@
             <div class="row">
                 <div class="col-lg-8">
                     <div class="contact__form">
-                        <form action="#">
+                        @include('home.messages')
+                        <form action="{{route('storemessage')}}" method="post">
+                            @csrf
                             <div class="row">
                                 <div class="col-lg-6 col-md-6 col-sm-6">
-                                    <input type="text" placeholder="Name">
+                                    <input type="text" placeholder="Name&Surname" name="name">
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-6">
-                                    <input type="text" placeholder="Email">
+                                    <input type="text" placeholder="Phone Number" name="phone">
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <input type="text" placeholder="Email" name="email">
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <input type="text" placeholder="Subject" name="subject">
                                 </div>
                                 <div class="col-lg-12">
-                                    <textarea placeholder="Message"></textarea>
+                                    <textarea placeholder="Message" name="message"></textarea>
                                     <button type="submit" class="site-btn">Send Message</button>
                                 </div>
                             </div>
