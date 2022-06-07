@@ -20,7 +20,7 @@ class AdminContentController extends Controller
 
     public function index()
     {
-        //
+
         $data = Content::all();
         return view('admin.content.index', [
             'data' => $data

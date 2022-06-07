@@ -33,10 +33,7 @@
                 <nav class="header__menu mobile-menu">
                     <ul>
                         <li class="active"><a href="{{route('home')}}">Home</a></li>
-                        <li><a href="./projects.html">Projects</a>
-                            <ul class="dropdown">
-                                <li><a href="./Project-details.html">Project Details </a></li>
-                            </ul>
+
                         </li>
                         <li><a href="#">Categories</a>
                             <ul class="dropdown">
@@ -47,6 +44,7 @@
                         </li>
                         <li><a href="./blog.html">Blog</a></li>
                         <li><a href="{{route('about')}}">About</a></li>
+                        <li><a href="{{route('faq')}}" method="post">FAQ</a>
                         <li><a href="{{route('references')}}">References</a></li>
                         <li><a href="{{route('contact')}}">Contact</a></li>
                     </ul>

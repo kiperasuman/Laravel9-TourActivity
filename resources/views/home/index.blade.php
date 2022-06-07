@@ -393,9 +393,9 @@
                 <div class="col-lg-10 text-center">
                     <div class="callto__text">
                         <span>Why choose us?</span>
-                        <h2>Our Ability To Deliver Outstanding Results For Our Clients Starts With Our Team Of Smart.
+                        <h2>The experience to help enhance your itinerary - or tailor-make you an entire journey
                         </h2>
-                        <a href="#" class="primary-btn">Contact Us</a>
+                        <a href="{{route('contact')}}" class="primary-btn">Contact Us</a>
                     </div>
                 </div>
             </div>

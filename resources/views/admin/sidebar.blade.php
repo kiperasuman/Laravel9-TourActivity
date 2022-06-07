@@ -46,7 +46,7 @@
         </li>
 
         <li class="nav-item">
-            <a class="nav-link" href="/admin/faq">
+            <a class="nav-link" href="{{route('admin.faq.index')}}">
                 <i class=" icon-search menu-icon "></i>
                 <span class="menu-title">FAQ</span>
             </a>
