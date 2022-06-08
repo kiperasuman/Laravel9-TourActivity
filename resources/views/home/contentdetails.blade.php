@@ -55,13 +55,17 @@
                 </div>
             </div>
             <div class="blog__item">
+                @php
+                $average=$data->comment->average('rate')
+                @endphp
+                <a href="#">{{number_format($average,1)}}/{{$data->comment->count('id')}} Comment(s)</a>
                 @foreach($comments as $rs)
                 <ul>
                     <li>{{$rs->created_at}}</li>
                     <li>{{$rs->user->name}}</li>
                     <li>{{$rs->rate}}</li>
                 </ul>
-                <h2>{{$rs->ssubject}}</h2>
+                <h2>{{$rs->subject}}</h2>
                 <div class="blog__item__text">
                     <p>{{$rs->comment}} </p>
                 </div>
