@@ -13,7 +13,7 @@
                         <h2>Projects Details</h2>
                         <div class="breadcrumb__links">
                             <a href="{{route('home')}}">Home</a>
-                            <a href="./project.html">Project</a>
+                            <a href="#">Project</a>
                             <span>{{$data->title}}</span>
                         </div>
                     </div>
@@ -27,7 +27,6 @@
     <section class="project-details spad">
         <div class="container">
             <div class="row">
-
                 @foreach($categoryList as $test)
                     <div class="col-md-4">
                         <a href="{{route('contentdetails',['id'=>$test->id])}}">
@@ -36,7 +35,6 @@
                         </a>
                     </div>
                 @endforeach
-
             </div>
         </div>
     </section>

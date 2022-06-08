@@ -54,6 +54,62 @@
                     </div>
                 </div>
             </div>
+            <div class="blog__item">
+                @foreach($comments as $rs)
+                <ul>
+                    <li>{{$rs->created_at}}</li>
+                    <li>{{$rs->user->name}}</li>
+                    <li>{{$rs->rate}}</li>
+                </ul>
+                <h2>{{$rs->ssubject}}</h2>
+                <div class="blog__item__text">
+                    <p>{{$rs->comment}} </p>
+                </div>
+                @endforeach
+            </div>
+            <div class="col-lg-4">
+                <div class="project__sidebar">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="contact__form__text">
+                                <div class="section-title">
+                                    <span>Form</span>
+                                    <h2>Get in touch</h2>
+                                </div>
+                                <p>Your email address will not be published.</p>
+                                @include('home.messages')
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="contact__form">
+                                <form action="{{route('storecomment')}}" method="post">
+                                    @csrf
+                                    <input type="hidden" name="content_id" value="{{$data->id}}"/>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-sm-6">
+                                            <input type="text" placeholder="Subject" name="subject"/>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <textarea placeholder="Comment" name="comment"></textarea>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-6">
+                                            <input type="number" placeholder="Rate:1-5" name="rate"/>
+                                        </div>
+                                    </div>
+                                    @auth()
+                                        <button type="submit" class="site-btn">Send Message</button>
+                                    @else
+                                        <a href="/login" class="site-btn"> For Submit Your Review,Please
+                                            Login</a>
+                                    @endauth
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <!-- Project Page Section End -->

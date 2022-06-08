@@ -44,7 +44,12 @@
                 <span class="menu-title"> Messages </span>
             </a>
         </li>
-
+        <li class="nav-item">
+            <a class="nav-link" href="{{route('admin.comment.index')}}">
+                <i class="icon-search menu-icon"></i>
+                <span class="menu-title">Comments</span>
+            </a>
+        </li>
         <li class="nav-item">
             <a class="nav-link" href="{{route('admin.faq.index')}}">
                 <i class=" icon-search menu-icon "></i>
