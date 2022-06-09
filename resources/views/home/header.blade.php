@@ -59,7 +59,7 @@
                         <ul>
                             <li><a href="#" class="text-uppercase">{{Auth::user()->name}}</a>
                                 <ul class="dropdown">
-                                    <li><a href="#">My Account</a></li>
+                                    <li><a href="{{route('userpanel.index')}}">My Account</a></li>
                                     <li><a href="#">My Wishlist</a></li>
                                     <li><a href="#">Compare</a></li>
                                     <li><a href="#">Checkout</a></li>
