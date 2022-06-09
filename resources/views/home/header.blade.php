@@ -60,11 +60,11 @@
                             <li><a href="#" class="text-uppercase">{{Auth::user()->name}}</a>
                                 <ul class="dropdown">
                                     <li><a href="{{route('userpanel.index')}}">My Account</a></li>
-                                    <li><a href="#">My Wishlist</a></li>
+                                    <li><a href="{{route('userpanel.comments')}}">My Comments</a></li>
                                     <li><a href="#">Compare</a></li>
                                     <li><a href="#">Checkout</a></li>
                                     <li><a href="#">Login</a></li>
-                                    <li><a href="#">Create An Account</a></li>
+                                    <li><a href="/logoutuser">Logout</a></li>
                                 </ul>
                             </li>
                             <a href="/logoutuser" class="text-uppercase">Logout</a>

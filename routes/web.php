@@ -88,8 +88,8 @@ Route::middleware('auth')->group(function(){
         // *********  USER ROUTES  ********//
     Route::prefix('userpanel')->name('userpanel.')->controller(UserController::class)->group(function () {
         Route::get('/','index')->name('index');
-
-
+        Route::get('/comments','comments')->name('comments');
+        Route::get('/commentdestroy/{id}', 'commentdestroy')->name('commentdestroy');
     });
 // *********  ADMİN PANEL ROUTES  ********//
 Route::middleware('admin')->prefix('admin')->name('admin.')->group(function () {

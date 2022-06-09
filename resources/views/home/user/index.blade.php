@@ -27,7 +27,7 @@
     <section class="contact spad">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-12">
                     <div class="contact__text">
                         <div class="section-title">
                             <span>Information</span>
@@ -39,14 +39,13 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-8">
+                    <div class="col-md-12">
                         <div class="contact__text">
                             <div class="section-title">
                                 <h2>User Profile</h2>
                                 <span>
-                             @include('profile.show')
-                           </span>
-
+                                @include('profile.show')
+                            </span>
                             </div>
                         </div>
                     </div>

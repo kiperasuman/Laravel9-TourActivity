@@ -78,7 +78,7 @@
                             <div class="contact__form__text">
                                 <div class="section-title">
                                     <span>Form</span>
-                                    <h2>Get in touch</h2>
+                                    <h2>Share Your Views With Us</h2>
                                 </div>
                                 <p>Your email address will not be published.</p>
                                 @include('home.messages')
