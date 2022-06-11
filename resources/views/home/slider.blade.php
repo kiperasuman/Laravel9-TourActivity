@@ -8,10 +8,9 @@
                 <a href="{{route('contentdetails',['id'=>$rs->category->id])}}" class="primary-btn">See Project</a>
                 <a href="{{route('contentdetails',['id'=>$rs->category->id])}}" class="more_btn">Discover more</a>
                 <div class="hero__social">
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-instagram"></i></a>
-                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://m.facebook.com/102230685838556/"><i class="fa fa-facebook"></i></a>
+                    <a href="https://twitter.com/bubbletourr?t=67oo5A4fAF2WpzW5sKze6w&s=09"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/bubbletourr/"><i class="fa fa-instagram"></i></a>
                 </div>
             </div>
         </div>

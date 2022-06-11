@@ -73,55 +73,6 @@
     </section>
     <!-- Project Section End -->
 
-    <!-- Services Section Begin -->
-    <section class="services spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title">
-                        <span>Our specialization</span>
-                        <h2>What we do</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="services__item">
-                        <img src="{{asset('assets')}}/img/services/services-1.png" alt="">
-                        <h4>Interior Design</h4>
-                        <p>As you might expect of a company that began as a high-end interiors contractor, we pay strict
-                            attention.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="services__item">
-                        <img src="{{asset('assets')}}/img/services/services-2.png" alt="">
-                        <h4>Office Design</h4>
-                        <p>Our commitment to exceptional quality has never wavered. To day ranks as one of the most
-                            highly-regarded construction.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="services__item">
-                        <img src="{{asset('assets')}}/img/services/services-3.png" alt="">
-                        <h4>Home Design</h4>
-                        <p>Interdisciplinary architectural studio with cultural, residential and commercial projects
-                            built worldwide.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="services__item">
-                        <img src="{{asset('assets')}}/img/services/services-4.png" alt="">
-                        <h4>Design drawing</h4>
-                        <p>Creating architectural and creative solutions to help people realize their vision and make
-                            them a reality.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Services Section End -->
-
     <!-- Testimonial Section Begin -->
     <section class="testimonial spad set-bg" data-setbg="{{asset('assets')}}/img/testimonial/testimonial-bg.jpg">
         <div class="container">
@@ -250,54 +201,16 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-9 col-md-8 col-sm-6">
-                    <div class="section-title">
-                        <span>Latest News</span>
-                        <h2>From our blog</h2>
-                    </div>
+
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="latest__btn">
-                        <a href="#" class="primary-btn normal-btn">View All</a>
+
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="latest__item">
-                        <div class="latest__item__pic">
-                            <img src="{{asset('assets')}}/img/blog/latest-1.jpg" alt="">
-                        </div>
-                        <div class="latest__item__text">
-                            <span>Architecture</span>
-                            <h4>Target and Amazon Shopping List for Home Stagers</h4>
-                            <a href="#">Read more</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="latest__item">
-                        <div class="latest__item__pic">
-                            <img src="{{asset('assets')}}/img/blog/latest-2.jpg" alt="">
-                        </div>
-                        <div class="latest__item__text">
-                            <span>Interior</span>
-                            <h4>6 Ideas for Team Building and Employee Appreciation for Home Stagers</h4>
-                            <a href="#">Read more</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="latest__item">
-                        <div class="latest__item__pic">
-                            <img src="{{asset('assets')}}/img/blog/latest-3.jpg" alt="">
-                        </div>
-                        <div class="latest__item__text">
-                            <span>Planning</span>
-                            <h4>How to Find the Best Price Structure for Your Home Staging Services</h4>
-                            <a href="#">Read more</a>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </div>
     </section>

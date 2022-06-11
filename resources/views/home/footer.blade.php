@@ -30,10 +30,9 @@
                         <li>+84 123 456 789</li>
                     </ul>
                     <div class="footer__social">
-                        <a href="#"><i class="fa fa-facebook"></i></a>
-                        <a href="#"><i class="fa fa-twitter"></i></a>
-                        <a href="#"><i class="fa fa-instagram"></i></a>
-                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://m.facebook.com/102230685838556/"><i class="fa fa-facebook"></i></a>
+                        <a href="https://twitter.com/bubbletourr?t=67oo5A4fAF2WpzW5sKze6w&s=09"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/bubbletourr/"><i class="fa fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
@@ -41,11 +40,9 @@
                 <div class="footer__widget">
                     <h6>Company</h6>
                     <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Our Works</a></li>
-                        <li><a href="#">Career</a></li>
-                        <li><a href="#">FAQs</a></li>
+                        <li><a href="{{route('about')}}">About Us</a></li>
+                        <li><a href="{{route('references')}}">References</a></li>
+                        <li><a href="{{route('faq')}}">FAQs</a></li>
                     </ul>
                 </div>
             </div>
