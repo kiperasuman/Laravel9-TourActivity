@@ -21,15 +21,21 @@
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="/admin/attend">
+            <a class="nav-link" href="/admin/attend/New">
                 <i class="icon-menu menu-icon"></i>
-                <span class="menu-title">Attend</span>
+                <span class="menu-title">New Attend</span>
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="/admin/image">
-                <i class="icon-image menu-icon"></i>
-                <span class="menu-title"> Images </span>
+            <a class="nav-link" href="/admin/attend/True">
+                <i class="icon-menu menu-icon"></i>
+                <span class="menu-title">Accepted Attend</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/admin/attend/False">
+                <i class="icon-menu menu-icon"></i>
+                <span class="menu-title">Rejected Attend</span>
             </a>
         </li>
         <li class="nav-item">
@@ -54,13 +60,6 @@
             <a class="nav-link" href="{{route('admin.faq.index')}}">
                 <i class=" icon-search menu-icon "></i>
                 <span class="menu-title">FAQ</span>
-            </a>
-        </li>
-
-        <li class="nav-item">
-            <a class="nav-link" href="/admin/social">
-                <i class="icon-share menu-icon"></i>
-                <span class="menu-title">Social Media</span>
             </a>
         </li>
         <li class="nav-item">

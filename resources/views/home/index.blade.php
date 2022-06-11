@@ -60,7 +60,9 @@
                     <div class="col-lg-3">
                         <div class="project__slider__item set-bg" data-setbg="{{Storage::url($rs->image)}}">
                             <div class="project__slider__item__hover">
-                               <h5><span>{{$rs->title}}</span></h5>
+                              <a href="{{route('attend.add',['id'=>$rs->id])}}">
+                                  <h5><span>{{$rs->title}}</span></h5>
+                              </a>
                             </div>
                         </div>
                     </div>
@@ -116,50 +118,6 @@
                     </div>
                 </div>
             </div>
-            <div class="counter__content">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="counter__item">
-                            <div class="counter__item__number">
-                                <h2 class="count">85</h2>
-                            </div>
-                            <div class="counter__item__text">
-                                <h5>Projects<br /> Completed</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="counter__item">
-                            <div class="counter__item__number">
-                                <h2 class="count">127</h2>
-                            </div>
-                            <div class="counter__item__text">
-                                <h5>Happy<br /> Clients</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="counter__item">
-                            <div class="counter__item__number">
-                                <h2 class="count">36</h2>
-                            </div>
-                            <div class="counter__item__text">
-                                <h5>Awards<br /> Received</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="counter__item">
-                            <div class="counter__item__number">
-                                <h2 class="count">74</h2>
-                            </div>
-                            <div class="counter__item__text">
-                                <h5>Cups Of<br /> Coffee</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
     <!-- Services Section End -->
@@ -171,7 +129,7 @@
                 <div class="col-lg-12 text-center">
                     <div class="section-title">
                         <span>Testimonials</span>
-                        <h2>What your clients say</h2>
+                        <h2>What Our Users Say</h2>
                     </div>
                 </div>
             </div>
@@ -181,53 +139,32 @@
                         <div class="testimonial__item">
                             <div class="row d-flex justify-content-center">
                                 <div class="col-xl-9 col-lg-10">
-                                    <p>“1. Fast and accurate at solving mental math problems involving addition,
-                                        subtraction, multiplication, division and percentages but without high-level
-                                        skills that might be required in jobs requiring complex calculation and
-                                        analysis.”</p>
+                                    <div class="section-title">
+                                        <span>Muğla </span>
+                                    </div>
+                                    <p>
+                                        “1.If you want to get away
+                                        from the tiring air of Istanbul for a moment,
+                                        Muğla is the best place for you.”</p>
                                 </div>
                             </div>
                         </div>
                         <div class="testimonial__item">
                             <div class="row d-flex justify-content-center">
                                 <div class="col-xl-9 col-lg-10">
-                                    <p>“2. Fast and accurate at solving mental math problems involving addition,
-                                        subtraction, multiplication, division and percentages but without high-level
-                                        skills that might be required in jobs requiring complex calculation and
-                                        analysis.”</p>
+                                    <div class="section-title">
+                                        <span>Yedigöller Tours</span>
+                                    </div>
+                                    <p>“2. It is a unique opportunity
+                                        to get rid of the stress of the city
+                                        by taking a small getaway
+                                        to find peace with its quiet and calm nature,
+                                        where you can see every shade of green, yellow,
+                                        orange and even brown.”</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="testimonial__item">
-                            <div class="row d-flex justify-content-center">
-                                <div class="col-xl-9 col-lg-10">
-                                    <p>“3. Fast and accurate at solving mental math problems involving addition,
-                                        subtraction, multiplication, division and percentages but without high-level
-                                        skills that might be required in jobs requiring complex calculation and
-                                        analysis.”</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="testimonial__item">
-                            <div class="row d-flex justify-content-center">
-                                <div class="col-xl-9 col-lg-10">
-                                    <p>“4. Fast and accurate at solving mental math problems involving addition,
-                                        subtraction, multiplication, division and percentages but without high-level
-                                        skills that might be required in jobs requiring complex calculation and
-                                        analysis.”</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="testimonial__item">
-                            <div class="row d-flex justify-content-center">
-                                <div class="col-lg-9">
-                                    <p>“5. Fast and accurate at solving mental math problems involving addition,
-                                        subtraction, multiplication, division and percentages but without high-level
-                                        skills that might be required in jobs requiring complex calculation and
-                                        analysis.”</p>
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -282,108 +219,13 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="logo__carousel owl-carousel">
-                        <div class="logo__carousel__item">
-                            <a href="#"><img src="{{asset('assets')}}/img/logo/logo-1.png" alt=""></a>
-                        </div>
-                        <div class="logo__carousel__item">
-                            <a href="#"><img src="{{asset('assets')}}/img/logo/logo-2.png" alt=""></a>
-                        </div>
-                        <div class="logo__carousel__item">
-                            <a href="#"><img src="{{asset('assets')}}/img/logo/logo-3.png" alt=""></a>
-                        </div>
-                        <div class="logo__carousel__item">
-                            <a href="#"><img src="{{asset('assets')}}/img/logo/logo-4.png" alt=""></a>
-                        </div>
-                        <div class="logo__carousel__item">
-                            <a href="#"><img src="{{asset('assets')}}/img/logo/logo-5.png" alt=""></a>
-                        </div>
-                        <div class="logo__carousel__item">
-                            <a href="#"><img src="{{asset('assets')}}/img/logo/logo-3.png" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
         </div>
     </section>
     <!-- Testimonial Section End -->
 
     <!-- Team Section Begin -->
-    <section class="team spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-9 col-md-8 col-sm-6">
-                    <div class="section-title">
-                        <span>Our Team</span>
-                        <h2>Meet our team</h2>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="team__btn">
-                        <a href="#" class="primary-btn normal-btn">View All</a>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <div class="team__item set-bg" data-setbg="{{asset('assets')}}/img/team/team-1.jpg">
-                        <div class="team__text">
-                            <div class="team__title">
-                                <h5>Dolores Webster</h5>
-                                <span>CEO & Founder</span>
-                            </div>
-                            <p>Vestibulum dapibus odio quam, sit amet hendrerit dui ultricies consectetur. Ut viverra
-                                porta leo, non tincidunt mauris condimentum eget. Vivamus non turpis elit. Aenean
-                                ultricies nisl sit amet.</p>
-                            <div class="team__social">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="team__item set-bg" data-setbg="{{asset('assets')}}/img/team/team-2.jpg">
-                        <div class="team__text">
-                            <div class="team__title">
-                                <h5>Dana Vaughn</h5>
-                                <span>Architect</span>
-                            </div>
-                            <p>Vestibulum dapibus odio quam, sit amet hendrerit dui ultricies consectetur. Ut viverra
-                                porta leo, non tincidunt mauris condimentum eget. Vivamus non turpis elit. Aenean
-                                ultricies nisl sit amet.</p>
-                            <div class="team__social">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="team__item set-bg" data-setbg="{{asset('assets')}}/img/team/team-3.jpg">
-                        <div class="team__text">
-                            <div class="team__title">
-                                <h5>Jonathan Mcdaniel</h5>
-                                <span>Architect</span>
-                            </div>
-                            <p>Vestibulum dapibus odio quam, sit amet hendrerit dui ultricies consectetur. Ut viverra
-                                porta leo, non tincidunt mauris condimentum eget. Vivamus non turpis elit. Aenean
-                                ultricies nisl sit amet.</p>
-                            <div class="team__social">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+
     <!-- Team Section End -->
 
     <!-- Call To Action Section Begin -->

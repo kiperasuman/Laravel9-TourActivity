@@ -50,26 +50,41 @@
                                 <span>Activity Date:</span>
                                 <p>{{$data->date}}</p>
                             </div>
+                            <div class="product__details__widget__item">
+                                <form action="{{route('attend.store')}}" method="post">
+                                    @csrf
+                                    <input class="input" name="status" type="hidden" value="{{$data->status}}">
+                                    <input class="input" name="id" type="hidden" value="{{$data->id}}">
+                                    <button type="submit" class="site-btn">Attend Tour </button>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="blog__item">
-                @php
+
+            @php
                 $average=$data->comment->average('rate')
-                @endphp
-                <a href="#">{{number_format($average,1)}}/{{$data->comment->count('id')}} Comment(s)</a>
-                @foreach($comments as $rs)
-                <ul>
-                    <li>{{$rs->created_at}}</li>
-                    <li>{{$rs->user->name}}</li>
-                    <li>{{$rs->rate}}</li>
-                </ul>
-                <h2>{{$rs->subject}}</h2>
-                <div class="blog__item__text">
-                    <p>{{$rs->comment}} </p>
+            @endphp
+            <a href="#">{{number_format($average,1)}}/{{$data->comment->count('id')}} Comment(s)</a>
+            <div class="col-lg-4">
+                <div class="project__sidebar">
+                    <div class="row">
+                        <div class="col-lg-12">
+                        @foreach($comments as $rs)
+                        <div class="card">
+                            <div class="card-body">
+                            <h6 class="card-title">Date: {{$rs->created_at}}</h6>
+                            <h6 class="card-title">User : {{$rs->user->name}}</h6>
+                            <h6 class="card-title"> Rate:{{$rs->rate}}</h6>
+                            <h6 class="card-title"> Subject: {{$rs->subject}}</h6>
+                            <h6 class="card-title"> Comment: {{$rs->comment}} </h6>
+                            </div>
+                        </div>
+                        @endforeach
+                    </div>
                 </div>
-                @endforeach
+            </div>
             </div>
             <div class="col-lg-4">
                 <div class="project__sidebar">
@@ -78,7 +93,7 @@
                             <div class="contact__form__text">
                                 <div class="section-title">
                                     <span>Form</span>
-                                    <h2>Share Your Views With Us</h2>
+                                    <h2>Get in touch</h2>
                                 </div>
                                 <p>Your email address will not be published.</p>
                                 @include('home.messages')

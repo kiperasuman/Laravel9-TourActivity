@@ -61,9 +61,7 @@
                                 <ul class="dropdown">
                                     <li><a href="{{route('userpanel.index')}}">My Account</a></li>
                                     <li><a href="{{route('userpanel.comments')}}">My Comments</a></li>
-                                    <li><a href="#">Compare</a></li>
-                                    <li><a href="#">Checkout</a></li>
-                                    <li><a href="#">Login</a></li>
+                                    <li><a href="{{route('attend.index')}}">Tour ({{\App\Http\Controllers\AttendController::countattend()}})</a></li>
                                     <li><a href="/logoutuser">Logout</a></li>
                                 </ul>
                             </li>

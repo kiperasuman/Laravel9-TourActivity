@@ -6,7 +6,7 @@
             <div class="hero__text">
                 <h2>{{$rs->title}}</h2>
                 <a href="{{route('contentdetails',['id'=>$rs->category->id])}}" class="primary-btn">See Project</a>
-                <a href="#" class="more_btn">Discover more</a>
+                <a href="{{route('contentdetails',['id'=>$rs->category->id])}}" class="more_btn">Discover more</a>
                 <div class="hero__social">
                     <a href="#"><i class="fa fa-facebook"></i></a>
                     <a href="#"><i class="fa fa-twitter"></i></a>

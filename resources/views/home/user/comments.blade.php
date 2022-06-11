@@ -39,14 +39,12 @@
                         </span>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="contact__text">
-                            <div class="section-title">
-                               <h2>User Comment & Reviews </h2>
-                              <span>
-                               <div class="card">
-                                <table class="table table-bordered" >
+                <div class="contact__text">
+                    <div class="section-title">
+                        <h2>User Comment & Reviews </h2>
+                        <span>
+                            <div class="card">
+                                <table class="table table-bordered">
                                     <thead>
                                     <tr>
                                         <th style="width: 10px">Id</th>
@@ -58,7 +56,6 @@
                                         <th style="width: 25px">Status</th>
                                         <th style="width: 1px">Delete</th>
 
-                                    </tr>
                                     </thead>
                                     <tbody>
                                     @foreach($comments as $rs)
@@ -81,15 +78,12 @@
                                     @endforeach
                                     </tbody>
                                 </table>
-                                    </div>
-                                </span>
                             </div>
-                        </div>
+                        </span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- Contact Section End -->
-
 @endsection

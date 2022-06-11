@@ -2,11 +2,13 @@
 
 use App\Http\Controllers\AdminPanel\AdminContentController;
 use App\Http\Controllers\AdminPanel\AdminUserController;
+use App\Http\Controllers\AdminPanel\AdminAttendController;
 use App\Http\Controllers\AdminPanel\CategoryController as AdminCategoryController;
 use App\Http\Controllers\AdminPanel\CommentController;
 use App\Http\Controllers\AdminPanel\FaqController;
 use App\Http\Controllers\AdminPanel\ImageController;
 use App\Http\Controllers\AdminPanel\MessageController;
+use App\Http\Controllers\AttendController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
@@ -17,7 +19,7 @@ use App\Http\Controllers\AdminPanel\HomeController as AdminHomeController;
 | Web Routes
 |--------------------------------------------------------------------------
 |
-| Here is where you can register web routes for your application. These
+| Here is where you can register web routes for your applica tion. These
 | routes are loaded by the RouteServiceProvider within a group which
 | contains the "web" middleware group. Now create something great!
 |  Test Comment
@@ -90,7 +92,23 @@ Route::middleware('auth')->group(function(){
         Route::get('/','index')->name('index');
         Route::get('/comments','comments')->name('comments');
         Route::get('/commentdestroy/{id}', 'commentdestroy')->name('commentdestroy');
+
     });
+    // *********  Attend ROUTES  ******** //
+    Route::prefix('/attend')->name('attend.')->controller(AttendController::class)->group(function () {
+        Route::get('/', 'index')->name('index');
+        Route::get('/create', 'create')->name('create');
+        Route::post('/store', 'store')->name('store');
+        Route::get('/add/{id}', 'add')->name('add');
+        Route::post('/update/{id}', 'update')->name('update');
+        Route::get('/destroy/{id}', 'destroy')->name('destroy');
+        Route::get('/show/{id}', 'show')->name('show');
+        Route::get('/storetour', 'storetour')->name('storetour');
+        Route::post('/completeattend', 'completeattend')->name('completeattend');
+
+
+    });
+
 // *********  ADMİN PANEL ROUTES  ********//
 Route::middleware('admin')->prefix('admin')->name('admin.')->group(function () {
     Route::get('/', [AdminHomeController::class, 'index'])->name('index');
@@ -166,6 +184,18 @@ Route::middleware('admin')->prefix('admin')->name('admin.')->group(function () {
         Route::get('/destroyrole/{uid}/{rid}', 'destroyrole')->name('destroyrole');
 
     });
+    // *********  ADMİN ATTEND ROUTES  ******** //
+    Route::prefix('/attend')->name('attend.')->controller(AdminAttendController::class)->group(function () {
+        Route::get('/{slug}', 'index')->name('index');
+        Route::get('/create', 'create')->name('create');
+        Route::post('/store', 'store')->name('store');
+        Route::get('/edit/{id}', 'edit')->name('edit');
+        Route::get('/destroy/{id}', 'destroy')->name('destroy');
+        Route::post('/update/{id}', 'update')->name('update');
+        Route::get('/show/{id}', 'show')->name('show');
+        Route::get('/cancelled/{id}', 'cancelled')->name('cancelled');
 
+    });
 });
+
 });
