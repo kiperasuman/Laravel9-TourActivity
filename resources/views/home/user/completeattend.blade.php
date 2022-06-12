@@ -10,10 +10,10 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="breadcrumb__text">
-                        <h2>Complete Order</h2>
+                        <h2>Approved Tours </h2>
                         <div class="breadcrumb__links">
                             <a href="{{route('home')}}">Home</a>
-                            <span>Complete Order</span>
+                            <span>Approved Tours </span>
                         </div>
                     </div>
                 </div>

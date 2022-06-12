@@ -13,10 +13,8 @@
                             <h3 class="font-weight-bold">Content List</h3>
                             <a href="{{route('admin.content.create')}}" class="btn btn-inverse-success btn-fw" >Add Content </a>
                         </div>
-
                     </div>
                 </div>
-
                 <div class="col-lg-12 grid-margin stretch-card">
                     <div class="card">
                         <div class="card-body" >
@@ -30,12 +28,11 @@
                                         <th style="width:50px">Location</th>
                                         <th style="width:50px">Activity Date</th>
                                         <th style="width:50px">Image</th>
-                                        <th style="width:50px">Image Gallery </th>
+                                        <th style="width:15px">Image Gallery </th>
                                         <th style="width: 25px">Status</th>
                                         <th style="width: 1px">Edit</th>
-                                        <th style="width: 1px">Delete</th>
-                                        <th style="width: 1px">Show</th>
-
+                                        <th>Delete</th>
+                                        <th>Show</th>
                                     </tr>
                                     </thead>
                                     <tbody>
@@ -60,7 +57,8 @@
                                         </td>
                                         <td>{{$rs->status}}</td>
                                         <td><a href="{{route('admin.content.edit',['id'=>$rs->id])}}" class="btn btn-inverse-success btn-fw">Edit</a></td>
-                                        <td><a href="{{route('admin.content.destroy',['id'=>$rs->id])}}" class="btn btn-inverse-danger btn-fw" onclick="return confirm('Deleting!Are you sure?')">Delete</a></td>
+                                        <td><a href="{{route('admin.content.destroy',['id'=>$rs->id])}}" class="btn btn-inverse-danger btn-fw"
+                                               onclick="return confirm('Deleting!Are you sure?')">Delete</a></td>
                                         <td><a href="{{route('admin.content.show',['id'=>$rs->id])}}" class="btn btn-inverse-info btn-fw">Show</a></td>
                                     </tr>
                                     @endforeach

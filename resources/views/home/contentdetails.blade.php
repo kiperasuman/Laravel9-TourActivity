@@ -55,7 +55,7 @@
                                     @csrf
                                     <input class="input" name="status" type="hidden" value="{{$data->status}}">
                                     <input class="input" name="id" type="hidden" value="{{$data->id}}">
-                                    <button type="submit" class="site-btn">Attend Tour </button>
+                                    <button type="submit" class="site-btn">Attend Tour</button>
                                 </form>
                             </div>
                         </div>
@@ -71,20 +71,20 @@
                 <div class="project__sidebar">
                     <div class="row">
                         <div class="col-lg-12">
-                        @foreach($comments as $rs)
-                        <div class="card">
-                            <div class="card-body">
-                            <h6 class="card-title">Date: {{$rs->created_at}}</h6>
-                            <h6 class="card-title">User : {{$rs->user->name}}</h6>
-                            <h6 class="card-title"> Rate:{{$rs->rate}}</h6>
-                            <h6 class="card-title"> Subject: {{$rs->subject}}</h6>
-                            <h6 class="card-title"> Comment: {{$rs->comment}} </h6>
-                            </div>
+                            @foreach($comments as $rs)
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h6 class="card-title">Date: {{$rs->created_at}}</h6>
+                                        <h6 class="card-title">User : {{$rs->user->name}}</h6>
+                                        <h6 class="card-title"> Rate:{{$rs->rate}}</h6>
+                                        <h6 class="card-title"> Subject: {{$rs->subject}}</h6>
+                                        <h6 class="card-title"> Comment: {{$rs->comment}} </h6>
+                                    </div>
+                                </div>
+                            @endforeach
                         </div>
-                        @endforeach
                     </div>
                 </div>
-            </div>
             </div>
             <div class="col-lg-4">
                 <div class="project__sidebar">
