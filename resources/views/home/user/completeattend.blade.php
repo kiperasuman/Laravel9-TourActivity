@@ -28,10 +28,11 @@
                 <div class="col-md-12">
                     <div class="about__text about__page__text">
                         <div class="section-title">
-                            <h2>Complete Tour</h2>
+                            <h2>Approved Tours </h2>
                         </div>
                         @include('home.messages')
                         <span>
+
                         <table class="table">
                             <thead>
                                  <tr>
@@ -46,7 +47,9 @@
                                  </tr>
                             </thead>
                             <tbody>
+
                             @foreach($data as $rs)
+                                @if($rs->status !='New')
                                 <tr>
                                    <td>{{$rs->user_id}}</td>
                                    <td>{{$rs->content_id}}</td>
@@ -59,6 +62,7 @@
                                     <td>{{$rs->content->city}}</td>
                                    <td>{{$rs->status}}</td>
                                 </tr>
+                                @endif
                             @endforeach
                             </tbody>
                         </table>

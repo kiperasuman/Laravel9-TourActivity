@@ -42,7 +42,6 @@
                                 @endforeach
                             </ul>
                         </li>
-                        <li><a href="./blog.html">Blog</a></li>
                         <li><a href="{{route('about')}}">About</a></li>
                         <li><a href="{{route('faq')}}" method="post">FAQ</a>
                         <li><a href="{{route('references')}}">References</a></li>

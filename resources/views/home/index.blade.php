@@ -61,7 +61,7 @@
                         <div class="project__slider__item set-bg" data-setbg="{{Storage::url($rs->image)}}">
                             <div class="project__slider__item__hover">
                               <a href="{{route('attend.add',['id'=>$rs->id])}}">
-                                  <h5><span>{{$rs->title}}</span></h5>
+                                  <h5><span>Add Tour: {{$rs->title}}</span></h5>
                               </a>
                             </div>
                         </div>

@@ -42,7 +42,7 @@
                     <div class="col-md-12">
                         <div class="contact__text">
                             <div class="section-title">
-                                <h2> Tour & Activity Information </h2>
+                                <h2> Tour & Activity Status Information </h2>
                                 <span>
                         <table class="table">
                             <thead>
@@ -60,6 +60,7 @@
                             </thead>
                             <tbody>
                             @foreach($data as $rs)
+                                @if($rs->status=='New')
                                 <tr>
                                    <td>{{$rs->user_id}}</td>
                                    <td>{{$rs->content_id}}</td>
@@ -77,6 +78,7 @@
                                        onclick="return confirm('Deleting!Are you sure?')">  [X]</a>
                                     </td>
                                    </tr>
+                                @endif
                             @endforeach
                             </tbody>
                         </table>
@@ -86,7 +88,7 @@
                             <button class="btn btn-light">Total Tour: {{\App\Http\Controllers\AttendController::countattend()}}</button>
                             <form action="{{route("attend.completeattend")}}" method="post"> </br>
                                 @csrf
-                                <button class="btn btn-light">Attend Tour</button>
+                                <button class="btn btn-light">Approved Tours</button>
                             </form>
                         </div>
                     </div>

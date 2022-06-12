@@ -22,7 +22,7 @@
 
 <div class="main-panel">
         @include('home.messages')
-        <form action="{{route('loginadmincheck')}}" method="post">
+        <form action="{{route('loginadmincheck')}}" method="post" style="position: relative; bottom:300px ; top:275px ;left: 475px ; right: 425px" >
             @csrf
             <div class="col-md-6 grid-margin stretch-card">
                 <div class="card">
